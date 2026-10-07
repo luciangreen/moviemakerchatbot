@@ -10,6 +10,7 @@
 :- use_module('../src/pixel_renderer').
 :- use_module('../src/vector_renderer').
 :- use_module('../src/rendered_renderer').
+:- use_module('../src/server').
 :- use_module('../src/song_adapter').
 :- use_module('../src/song_analysis').
 :- use_module('../src/song_visual_sync').
@@ -73,6 +74,22 @@ test(regeneration) :-
     movie("A tiger escapes from a palace during a thunderstorm.", [], Movie0),
     regenerate(scene(4), "Make this more spectacular", Movie0, Movie1),
     Movie1 \= Movie0.
+
+test(regeneration_target_parsing) :-
+    server:parse_regeneration_target("scene(2)", scene(2)),
+    server:parse_regeneration_target(3, scene(3)).
+
+test(regeneration_target_rejects_invalid, [throws(error(domain_error(regeneration_target, _), _))]) :-
+    server:parse_regeneration_target("scene(0)", _).
+
+test(regeneration_updates_only_requested_scene) :-
+    movie("A tiger escapes from a palace during a thunderstorm.", [], Movie0),
+    regenerate(scene(2), "Add a close-up", Movie0, movie(Parts)),
+    member(scenes(Scenes), Parts),
+    member(scene(2, _, _, _, Elements), Scenes),
+    member(edit_instruction("Add a close-up"), Elements),
+    member(scene(1, _, _, _, OtherElements), Scenes),
+    \+ member(edit_instruction(_), OtherElements).
 
 test(export_modes) :-
     movie_html("A red train races through snowy mountains.", HTML1),

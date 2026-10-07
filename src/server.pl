@@ -7,6 +7,9 @@
 :- use_module(library(http/html_write)).
 :- use_module(chatbot).
 :- use_module(movie_maker).
+:- use_module(pixel_renderer, [render_pixel_movie/2]).
+:- use_module(vector_renderer, [render_vector_movie/2]).
+:- use_module(rendered_renderer, [render_rendered_movie/2]).
 
 :- dynamic server_port/1.
 
@@ -76,7 +79,8 @@ async function regenerateMovie(){
   const r=await fetch('/api/regenerate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
   const j=await r.json();
   latestMovie=j.movie;
-  document.getElementById('reply').textContent='Updated movie scene instructions.';
+  document.getElementById('reply').textContent=j.message;
+  document.getElementById('preview').innerHTML=j.html;
 }
 " )).
 
@@ -98,7 +102,33 @@ api_regenerate(Request) :-
     ( string(StyleRaw) -> atom_string(Style, StyleRaw) ; Style = StyleRaw ),
     Duration = Dict.get(duration),
     movie(Sentence, [style(Style), duration(Duration)], Movie0),
-    atom_to_term('scene(4)', Target, _),
+    ( get_dict(target, Dict, TargetValue) ->
+        parse_regeneration_target(TargetValue, Target)
+    ; Target = scene(4)
+    ),
     regenerate(Target, Instruction, Movie0, Movie1),
     term_string(Movie1, MovieSpec),
-    reply_json_dict(_{movie:MovieSpec}).
+    render_movie(Style, Movie1, HTML),
+    reply_json_dict(_{message:"Updated the requested scene.",movie:MovieSpec,html:HTML}).
+
+parse_regeneration_target(Value, scene(Index)) :-
+    ( integer(Value) ->
+        Index = Value
+    ; string(Value) ->
+        atom_string(Atom, Value),
+        parse_scene_target(Atom, Index)
+    ; atom(Value) ->
+        parse_scene_target(Value, Index)
+    ),
+    integer(Index),
+    Index > 0,
+    !.
+parse_regeneration_target(Value, _) :-
+    throw(error(domain_error(regeneration_target, Value), _)).
+
+parse_scene_target(Atom, Index) :-
+    catch(atom_to_term(Atom, scene(Index), []), _, fail).
+
+render_movie(pixel, Movie, HTML) :- render_pixel_movie(Movie, HTML).
+render_movie(vector, Movie, HTML) :- render_vector_movie(Movie, HTML).
+render_movie(rendered, Movie, HTML) :- render_rendered_movie(Movie, HTML).
