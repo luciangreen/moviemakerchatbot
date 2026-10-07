@@ -91,6 +91,23 @@ test(regeneration_updates_only_requested_scene) :-
     member(scene(1, _, _, _, OtherElements), Scenes),
     \+ member(edit_instruction(_), OtherElements).
 
+test(io_pair_concept_coverage) :-
+    forall(
+        io_pair(_, Sentence, expected(Requirements)),
+        ( member(subjects([Subject]), Requirements),
+          atom_string(Subject, SubjectString),
+          member(actions([Action]), Requirements),
+          atom_string(Action, ActionString),
+          member(location(Location), Requirements),
+          member(weather(Weather), Requirements),
+          expand_spec(Sentence, Spec),
+          Spec.subjects == [SubjectString],
+          Spec.actions == [ActionString],
+          Spec.location == Location,
+          Spec.weather == Weather
+        )
+    ).
+
 test(export_modes) :-
     movie_html("A red train races through snowy mountains.", HTML1),
     movie_vector("A red train races through snowy mountains.", HTML2),

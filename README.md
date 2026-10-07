@@ -82,11 +82,10 @@ curl -s -X POST http://localhost:8080/api/regenerate \
 
 **What this does:**
 - rebuilds the movie from your sentence/options
-- applies your edit instruction to scene 4
-- returns updated `movie` JSON
+- applies your edit instruction to the requested scene
+- returns the updated `movie` JSON and rendered `html` preview
 
-**Important note:**
-- the current server implementation always regenerates `scene(4)` internally
+The `target` accepts a scene index such as `"scene(2)"` or `2`. If omitted, it defaults to `"scene(4)"`.
 
 ---
 
