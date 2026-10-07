@@ -85,7 +85,7 @@ curl -s -X POST http://localhost:8080/api/regenerate \
 - applies your edit instruction to the requested scene
 - returns the updated `movie` JSON and rendered `html` preview
 
-The `target` accepts a scene index such as `"scene(2)"` or `2`. If omitted, it defaults to `"scene(4)"`.
+The `target` accepts an existing scene index such as `"scene(2)"` or `2`. If omitted, it defaults to `"scene(4)"`. The web UI also lets you select a scene.
 
 ---
 

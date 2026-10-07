@@ -53,7 +53,9 @@ page_body -->
         ]),
         p([], [
             'Edit instructions: ',
-            input([id(edit),type(text),value('Make the ending peaceful.'),style('width:70%')],[])
+            input([id(edit),type(text),value('Make the ending peaceful.'),style('width:55%')],[]),
+            label([for(target), style('margin-left:10px')], 'Scene'),
+            input([id(target),type(number),value(4),min(1),max(5)],[])
         ]),
         pre([id(reply),style('white-space:pre-wrap;background:#f5f5f5;padding:8px')], ''),
         div([id(preview),style('border:1px solid #ddd;min-height:120px')], '')
@@ -74,7 +76,7 @@ async function regenerateMovie(){
     sentence:document.getElementById('spec').value,
     style:document.getElementById('style').value,
     duration:parseInt(document.getElementById('duration').value,10),
-    target:'scene(4)'
+    target:parseInt(document.getElementById('target').value,10)
   };
   const r=await fetch('/api/regenerate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
   const j=await r.json();
@@ -106,6 +108,7 @@ api_regenerate(Request) :-
         parse_regeneration_target(TargetValue, Target)
     ; Target = scene(4)
     ),
+    validate_regeneration_target(Target, Movie0),
     regenerate(Target, Instruction, Movie0, Movie1),
     term_string(Movie1, MovieSpec),
     render_movie(Style, Movie1, HTML),
@@ -128,6 +131,13 @@ parse_regeneration_target(Value, _) :-
 
 parse_scene_target(Atom, Index) :-
     catch(atom_to_term(Atom, scene(Index), []), _, fail).
+
+validate_regeneration_target(scene(Index), movie(Parts)) :-
+    member(scenes(Scenes), Parts),
+    member(scene(Index, _, _, _, _), Scenes),
+    !.
+validate_regeneration_target(Target, _) :-
+    throw(error(domain_error(existing_scene, Target), _)).
 
 render_movie(pixel, Movie, HTML) :- render_pixel_movie(Movie, HTML).
 render_movie(vector, Movie, HTML) :- render_vector_movie(Movie, HTML).

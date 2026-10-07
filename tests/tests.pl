@@ -87,6 +87,10 @@ test(regeneration_target_parsing) :-
 test(regeneration_target_rejects_invalid, [throws(error(domain_error(regeneration_target, _), _))]) :-
     server:parse_regeneration_target("scene(0)", _).
 
+test(regeneration_rejects_missing_scene, [throws(error(domain_error(existing_scene, scene(6)), _))]) :-
+    movie("A tiger escapes from a palace during a thunderstorm.", [], Movie),
+    server:validate_regeneration_target(scene(6), Movie).
+
 test(regeneration_updates_only_requested_scene) :-
     movie("A tiger escapes from a palace during a thunderstorm.", [], Movie0),
     regenerate(scene(2), "Add a close-up", Movie0, movie(Parts)),
