@@ -56,6 +56,11 @@ test(vector_rendering) :-
     movie_vector("Two astronauts dance on the moon.", HTML),
     sub_string(HTML, _, _, _, "<svg").
 
+test(renderer_escapes_prompt_text) :-
+    movie_vector("<script>alert(1)</script>", HTML),
+    sub_string(HTML, _, _, _, "&lt;script&gt;alert(1)&lt;/script&gt;"),
+    \+ sub_string(HTML, _, _, _, "<script>alert(1)</script>").
+
 test(rendered_rendering) :-
     movie_rendered("A giant wave approaches a coastal city.", HTML),
     sub_string(HTML, _, _, _, "<canvas").
