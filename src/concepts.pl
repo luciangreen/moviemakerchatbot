@@ -41,10 +41,7 @@ is_subject_token(Token) :-
     \+ weather_token(Token, _),
     \+ mood_token(Token, _),
     \+ time_token(Token, _),
-    atom_string(Atom, Token),
-    \+ sub_atom(Atom, 0, 1, _, 'a'),
-    \+ sub_atom(Atom, 0, 2, _, 'an'),
-    \+ sub_atom(Atom, 0, 3, _, 'the').
+    \+ member(Token, ["a","an","the","through","at","in","on","under","over","into","across","around","during","with","and","or","but","from","to","of","by"]).
 
 is_action_token(Token) :- member(Token, ["runs","run","flies","fly","crosses","cross","escapes","escape","launches","launch","dances","dance","approaches","approach","jumps","jump"]).
 location_token("city", city).
@@ -54,12 +51,18 @@ location_token("mountains", mountains).
 location_token("moon", moon).
 location_token("space", space).
 location_token("melbourne", melbourne).
+location_token("desert", desert).
+location_token("forest", forest).
+location_token("harbour", harbour).
+location_token("village", village).
 
 weather_token("storm", storm).
 weather_token("thunderstorm", thunderstorm).
 weather_token("rain", rain).
-weather_token("snowy", snow).
+weather_token("snowy", snowy).
 weather_token("sunset", sunset).
+weather_token("clear", clear).
+weather_token("night", night).
 
 mood_token("dramatic", dramatic).
 mood_token("peaceful", peaceful).

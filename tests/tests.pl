@@ -10,6 +10,7 @@
 :- use_module('../src/pixel_renderer').
 :- use_module('../src/vector_renderer').
 :- use_module('../src/rendered_renderer').
+:- use_module('../src/server').
 :- use_module('../src/song_adapter').
 :- use_module('../src/song_analysis').
 :- use_module('../src/song_visual_sync').
@@ -55,6 +56,11 @@ test(vector_rendering) :-
     movie_vector("Two astronauts dance on the moon.", HTML),
     sub_string(HTML, _, _, _, "<svg").
 
+test(renderer_escapes_prompt_text) :-
+    movie_vector("<script>alert(1)</script>", HTML),
+    sub_string(HTML, _, _, _, "&lt;script&gt;alert(1)&lt;/script&gt;"),
+    \+ sub_string(HTML, _, _, _, "<script>alert(1)</script>").
+
 test(rendered_rendering) :-
     movie_rendered("A giant wave approaches a coastal city.", HTML),
     sub_string(HTML, _, _, _, "<canvas").
@@ -73,6 +79,43 @@ test(regeneration) :-
     movie("A tiger escapes from a palace during a thunderstorm.", [], Movie0),
     regenerate(scene(4), "Make this more spectacular", Movie0, Movie1),
     Movie1 \= Movie0.
+
+test(regeneration_target_parsing) :-
+    server:parse_regeneration_target("scene(2)", scene(2)),
+    server:parse_regeneration_target(3, scene(3)).
+
+test(regeneration_target_rejects_invalid, [throws(error(domain_error(regeneration_target, _), _))]) :-
+    server:parse_regeneration_target("scene(0)", _).
+
+test(regeneration_rejects_missing_scene, [throws(error(domain_error(existing_scene, scene(6)), _))]) :-
+    movie("A tiger escapes from a palace during a thunderstorm.", [], Movie),
+    server:validate_regeneration_target(scene(6), Movie).
+
+test(regeneration_updates_only_requested_scene) :-
+    movie("A tiger escapes from a palace during a thunderstorm.", [], Movie0),
+    regenerate(scene(2), "Add a close-up", Movie0, movie(Parts)),
+    member(scenes(Scenes), Parts),
+    member(scene(2, _, _, _, Elements), Scenes),
+    member(edit_instruction("Add a close-up"), Elements),
+    member(scene(1, _, _, _, OtherElements), Scenes),
+    \+ member(edit_instruction(_), OtherElements).
+
+test(io_pair_concept_coverage) :-
+    forall(
+        io_pair(_, Sentence, expected(Requirements)),
+        ( member(subjects([Subject]), Requirements),
+          atom_string(Subject, SubjectString),
+          member(actions([Action]), Requirements),
+          atom_string(Action, ActionString),
+          member(location(Location), Requirements),
+          member(weather(Weather), Requirements),
+          expand_spec(Sentence, Spec),
+          Spec.subjects == [SubjectString],
+          Spec.actions == [ActionString],
+          Spec.location == Location,
+          Spec.weather == Weather
+        )
+    ).
 
 test(export_modes) :-
     movie_html("A red train races through snowy mountains.", HTML1),

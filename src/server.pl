@@ -7,6 +7,9 @@
 :- use_module(library(http/html_write)).
 :- use_module(chatbot).
 :- use_module(movie_maker).
+:- use_module(pixel_renderer, [render_pixel_movie/2]).
+:- use_module(vector_renderer, [render_vector_movie/2]).
+:- use_module(rendered_renderer, [render_rendered_movie/2]).
 
 :- dynamic server_port/1.
 
@@ -50,7 +53,9 @@ page_body -->
         ]),
         p([], [
             'Edit instructions: ',
-            input([id(edit),type(text),value('Make the ending peaceful.'),style('width:70%')],[])
+            input([id(edit),type(text),value('Make the ending peaceful.'),style('width:55%')],[]),
+            label([for(target), style('margin-left:10px')], 'Scene'),
+            input([id(target),type(number),value(4),min(1),max(5)],[])
         ]),
         pre([id(reply),style('white-space:pre-wrap;background:#f5f5f5;padding:8px')], ''),
         div([id(preview),style('border:1px solid #ddd;min-height:120px')], '')
@@ -71,12 +76,13 @@ async function regenerateMovie(){
     sentence:document.getElementById('spec').value,
     style:document.getElementById('style').value,
     duration:parseInt(document.getElementById('duration').value,10),
-    target:'scene(4)'
+    target:parseInt(document.getElementById('target').value,10)
   };
   const r=await fetch('/api/regenerate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
   const j=await r.json();
   latestMovie=j.movie;
-  document.getElementById('reply').textContent='Updated movie scene instructions.';
+  document.getElementById('reply').textContent=j.message;
+  document.getElementById('preview').innerHTML=j.html;
 }
 " )).
 
@@ -98,7 +104,41 @@ api_regenerate(Request) :-
     ( string(StyleRaw) -> atom_string(Style, StyleRaw) ; Style = StyleRaw ),
     Duration = Dict.get(duration),
     movie(Sentence, [style(Style), duration(Duration)], Movie0),
-    atom_to_term('scene(4)', Target, _),
+    ( get_dict(target, Dict, TargetValue) ->
+        parse_regeneration_target(TargetValue, Target)
+    ; Target = scene(4)
+    ),
+    validate_regeneration_target(Target, Movie0),
     regenerate(Target, Instruction, Movie0, Movie1),
     term_string(Movie1, MovieSpec),
-    reply_json_dict(_{movie:MovieSpec}).
+    render_movie(Style, Movie1, HTML),
+    reply_json_dict(_{message:"Updated the requested scene.",movie:MovieSpec,html:HTML}).
+
+parse_regeneration_target(Value, scene(Index)) :-
+    ( integer(Value) ->
+        Index = Value
+    ; string(Value) ->
+        atom_string(Atom, Value),
+        parse_scene_target(Atom, Index)
+    ; atom(Value) ->
+        parse_scene_target(Value, Index)
+    ),
+    integer(Index),
+    Index > 0,
+    !.
+parse_regeneration_target(Value, _) :-
+    throw(error(domain_error(regeneration_target, Value), _)).
+
+parse_scene_target(Atom, Index) :-
+    catch(atom_to_term(Atom, scene(Index), []), _, fail).
+
+validate_regeneration_target(scene(Index), movie(Parts)) :-
+    member(scenes(Scenes), Parts),
+    member(scene(Index, _, _, _, _), Scenes),
+    !.
+validate_regeneration_target(Target, _) :-
+    throw(error(domain_error(existing_scene, Target), _)).
+
+render_movie(pixel, Movie, HTML) :- render_pixel_movie(Movie, HTML).
+render_movie(vector, Movie, HTML) :- render_vector_movie(Movie, HTML).
+render_movie(rendered, Movie, HTML) :- render_rendered_movie(Movie, HTML).
