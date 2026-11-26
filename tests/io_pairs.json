@@ -17,7 +17,7 @@
   },
   {
     "id": 2,
-    "sentence": "A tiger flies through the ocean at storm.",
+    "sentence": "A tiger flies through the mountains during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
         "tiger"
@@ -25,7 +25,7 @@
       "actions": [
         "flies"
       ],
-      "location": "ocean",
+      "location": "mountains",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5
@@ -33,7 +33,7 @@
   },
   {
     "id": 3,
-    "sentence": "A astronaut crosses through the palace at rain.",
+    "sentence": "An astronaut crosses through the forest in the rain, as a rendered film.",
     "expected": {
       "subjects": [
         "astronaut"
@@ -41,7 +41,7 @@
       "actions": [
         "crosses"
       ],
-      "location": "palace",
+      "location": "forest",
       "weather": "rain",
       "style": "rendered",
       "min_scene_count": 5
@@ -49,15 +49,15 @@
   },
   {
     "id": 4,
-    "sentence": "A train escapes through the mountains at snowy.",
+    "sentence": "A robot jumps through the village on a snowy evening.",
     "expected": {
       "subjects": [
-        "train"
+        "robot"
       ],
       "actions": [
-        "escapes"
+        "jumps"
       ],
-      "location": "mountains",
+      "location": "village",
       "weather": "snowy",
       "style": "pixel",
       "min_scene_count": 5
@@ -65,15 +65,15 @@
   },
   {
     "id": 5,
-    "sentence": "A ship dances through the moon at clear.",
+    "sentence": "A bird dances through the palace under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
-        "ship"
+        "bird"
       ],
       "actions": [
         "dances"
       ],
-      "location": "moon",
+      "location": "palace",
       "weather": "clear",
       "style": "vector",
       "min_scene_count": 5
@@ -81,13 +81,13 @@
   },
   {
     "id": 6,
-    "sentence": "A bird jumps through the space at night.",
+    "sentence": "A ship escapes through space at night, as a rendered film.",
     "expected": {
       "subjects": [
-        "bird"
+        "ship"
       ],
       "actions": [
-        "jumps"
+        "escapes"
       ],
       "location": "space",
       "weather": "night",
@@ -97,15 +97,15 @@
   },
   {
     "id": 7,
-    "sentence": "A dancer approaches through the forest at sunset.",
+    "sentence": "A train approaches through the harbour at sunset.",
     "expected": {
       "subjects": [
-        "dancer"
+        "train"
       ],
       "actions": [
         "approaches"
       ],
-      "location": "forest",
+      "location": "harbour",
       "weather": "sunset",
       "style": "pixel",
       "min_scene_count": 5
@@ -113,15 +113,15 @@
   },
   {
     "id": 8,
-    "sentence": "A robot launches through the desert at storm.",
+    "sentence": "A dancer launches through the ocean during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
-        "robot"
+        "dancer"
       ],
       "actions": [
         "launches"
       ],
-      "location": "desert",
+      "location": "ocean",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5
@@ -129,109 +129,13 @@
   },
   {
     "id": 9,
-    "sentence": "A traveller runs through the harbour at rain.",
-    "expected": {
-      "subjects": [
-        "traveller"
-      ],
-      "actions": [
-        "runs"
-      ],
-      "location": "harbour",
-      "weather": "rain",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 10,
-    "sentence": "A pilot flies through the village at snowy.",
+    "sentence": "A pilot runs through the moon in the rain, as a rendered film.",
     "expected": {
       "subjects": [
         "pilot"
       ],
       "actions": [
-        "flies"
-      ],
-      "location": "village",
-      "weather": "snowy",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 11,
-    "sentence": "A cat crosses through the city at clear.",
-    "expected": {
-      "subjects": [
-        "cat"
-      ],
-      "actions": [
-        "crosses"
-      ],
-      "location": "city",
-      "weather": "clear",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 12,
-    "sentence": "A tiger escapes through the ocean at night.",
-    "expected": {
-      "subjects": [
-        "tiger"
-      ],
-      "actions": [
-        "escapes"
-      ],
-      "location": "ocean",
-      "weather": "night",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 13,
-    "sentence": "A astronaut dances through the palace at sunset.",
-    "expected": {
-      "subjects": [
-        "astronaut"
-      ],
-      "actions": [
-        "dances"
-      ],
-      "location": "palace",
-      "weather": "sunset",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 14,
-    "sentence": "A train jumps through the mountains at storm.",
-    "expected": {
-      "subjects": [
-        "train"
-      ],
-      "actions": [
-        "jumps"
-      ],
-      "location": "mountains",
-      "weather": "storm",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 15,
-    "sentence": "A ship approaches through the moon at rain.",
-    "expected": {
-      "subjects": [
-        "ship"
-      ],
-      "actions": [
-        "approaches"
+        "runs"
       ],
       "location": "moon",
       "weather": "rain",
@@ -240,11 +144,203 @@
     }
   },
   {
-    "id": 16,
-    "sentence": "A bird launches through the space at snowy.",
+    "id": 10,
+    "sentence": "A traveller flies through the desert on a snowy evening.",
+    "expected": {
+      "subjects": [
+        "traveller"
+      ],
+      "actions": [
+        "flies"
+      ],
+      "location": "desert",
+      "weather": "snowy",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 11,
+    "sentence": "A cat jumps through the ocean under a clear sky, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "cat"
+      ],
+      "actions": [
+        "jumps"
+      ],
+      "location": "ocean",
+      "weather": "clear",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 12,
+    "sentence": "A tiger dances through the moon at night, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "tiger"
+      ],
+      "actions": [
+        "dances"
+      ],
+      "location": "moon",
+      "weather": "night",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 13,
+    "sentence": "An astronaut escapes through the desert at sunset.",
+    "expected": {
+      "subjects": [
+        "astronaut"
+      ],
+      "actions": [
+        "escapes"
+      ],
+      "location": "desert",
+      "weather": "sunset",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 14,
+    "sentence": "A robot approaches through the city during a storm, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "robot"
+      ],
+      "actions": [
+        "approaches"
+      ],
+      "location": "city",
+      "weather": "storm",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 15,
+    "sentence": "A bird launches through the mountains in the rain, as a rendered film.",
     "expected": {
       "subjects": [
         "bird"
+      ],
+      "actions": [
+        "launches"
+      ],
+      "location": "mountains",
+      "weather": "rain",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 16,
+    "sentence": "A ship runs through the forest on a snowy evening.",
+    "expected": {
+      "subjects": [
+        "ship"
+      ],
+      "actions": [
+        "runs"
+      ],
+      "location": "forest",
+      "weather": "snowy",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 17,
+    "sentence": "A train flies through the village under a clear sky, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "train"
+      ],
+      "actions": [
+        "flies"
+      ],
+      "location": "village",
+      "weather": "clear",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 18,
+    "sentence": "A dancer crosses through the palace at night, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "dancer"
+      ],
+      "actions": [
+        "crosses"
+      ],
+      "location": "palace",
+      "weather": "night",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 19,
+    "sentence": "A pilot jumps through space at sunset.",
+    "expected": {
+      "subjects": [
+        "pilot"
+      ],
+      "actions": [
+        "jumps"
+      ],
+      "location": "space",
+      "weather": "sunset",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 20,
+    "sentence": "A traveller dances through the harbour during a storm, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "traveller"
+      ],
+      "actions": [
+        "dances"
+      ],
+      "location": "harbour",
+      "weather": "storm",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 21,
+    "sentence": "A cat approaches through the palace in the rain, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "cat"
+      ],
+      "actions": [
+        "approaches"
+      ],
+      "location": "palace",
+      "weather": "rain",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 22,
+    "sentence": "A tiger launches through space on a snowy evening.",
+    "expected": {
+      "subjects": [
+        "tiger"
       ],
       "actions": [
         "launches"
@@ -256,112 +352,16 @@
     }
   },
   {
-    "id": 17,
-    "sentence": "A dancer runs through the forest at clear.",
-    "expected": {
-      "subjects": [
-        "dancer"
-      ],
-      "actions": [
-        "runs"
-      ],
-      "location": "forest",
-      "weather": "clear",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 18,
-    "sentence": "A robot flies through the desert at night.",
-    "expected": {
-      "subjects": [
-        "robot"
-      ],
-      "actions": [
-        "flies"
-      ],
-      "location": "desert",
-      "weather": "night",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 19,
-    "sentence": "A traveller crosses through the harbour at sunset.",
-    "expected": {
-      "subjects": [
-        "traveller"
-      ],
-      "actions": [
-        "crosses"
-      ],
-      "location": "harbour",
-      "weather": "sunset",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 20,
-    "sentence": "A pilot escapes through the village at storm.",
-    "expected": {
-      "subjects": [
-        "pilot"
-      ],
-      "actions": [
-        "escapes"
-      ],
-      "location": "village",
-      "weather": "storm",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 21,
-    "sentence": "A cat dances through the city at rain.",
-    "expected": {
-      "subjects": [
-        "cat"
-      ],
-      "actions": [
-        "dances"
-      ],
-      "location": "city",
-      "weather": "rain",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 22,
-    "sentence": "A tiger jumps through the ocean at snowy.",
-    "expected": {
-      "subjects": [
-        "tiger"
-      ],
-      "actions": [
-        "jumps"
-      ],
-      "location": "ocean",
-      "weather": "snowy",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
     "id": 23,
-    "sentence": "A astronaut approaches through the palace at clear.",
+    "sentence": "An astronaut runs through the harbour under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
         "astronaut"
       ],
       "actions": [
-        "approaches"
+        "runs"
       ],
-      "location": "palace",
+      "location": "harbour",
       "weather": "clear",
       "style": "vector",
       "min_scene_count": 5
@@ -369,15 +369,15 @@
   },
   {
     "id": 24,
-    "sentence": "A train launches through the mountains at night.",
+    "sentence": "A robot flies through the ocean at night, as a rendered film.",
     "expected": {
       "subjects": [
-        "train"
+        "robot"
       ],
       "actions": [
-        "launches"
+        "flies"
       ],
-      "location": "mountains",
+      "location": "ocean",
       "weather": "night",
       "style": "rendered",
       "min_scene_count": 5
@@ -385,13 +385,13 @@
   },
   {
     "id": 25,
-    "sentence": "A ship runs through the moon at sunset.",
+    "sentence": "A bird crosses through the moon at sunset.",
     "expected": {
       "subjects": [
-        "ship"
+        "bird"
       ],
       "actions": [
-        "runs"
+        "crosses"
       ],
       "location": "moon",
       "weather": "sunset",
@@ -401,15 +401,15 @@
   },
   {
     "id": 26,
-    "sentence": "A bird flies through the space at storm.",
+    "sentence": "A ship jumps through the desert during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
-        "bird"
+        "ship"
       ],
       "actions": [
-        "flies"
+        "jumps"
       ],
-      "location": "space",
+      "location": "desert",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5
@@ -417,15 +417,15 @@
   },
   {
     "id": 27,
-    "sentence": "A dancer crosses through the forest at rain.",
+    "sentence": "A train dances through the city in the rain, as a rendered film.",
     "expected": {
       "subjects": [
-        "dancer"
+        "train"
       ],
       "actions": [
-        "crosses"
+        "dances"
       ],
-      "location": "forest",
+      "location": "city",
       "weather": "rain",
       "style": "rendered",
       "min_scene_count": 5
@@ -433,15 +433,15 @@
   },
   {
     "id": 28,
-    "sentence": "A robot escapes through the desert at snowy.",
+    "sentence": "A dancer escapes through the mountains on a snowy evening.",
     "expected": {
       "subjects": [
-        "robot"
+        "dancer"
       ],
       "actions": [
         "escapes"
       ],
-      "location": "desert",
+      "location": "mountains",
       "weather": "snowy",
       "style": "pixel",
       "min_scene_count": 5
@@ -449,15 +449,15 @@
   },
   {
     "id": 29,
-    "sentence": "A traveller dances through the harbour at clear.",
+    "sentence": "A pilot approaches through the forest under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
-        "traveller"
+        "pilot"
       ],
       "actions": [
-        "dances"
+        "approaches"
       ],
-      "location": "harbour",
+      "location": "forest",
       "weather": "clear",
       "style": "vector",
       "min_scene_count": 5
@@ -465,13 +465,13 @@
   },
   {
     "id": 30,
-    "sentence": "A pilot jumps through the village at night.",
+    "sentence": "A traveller launches through the village at night, as a rendered film.",
     "expected": {
       "subjects": [
-        "pilot"
+        "traveller"
       ],
       "actions": [
-        "jumps"
+        "launches"
       ],
       "location": "village",
       "weather": "night",
@@ -481,15 +481,15 @@
   },
   {
     "id": 31,
-    "sentence": "A cat approaches through the city at sunset.",
+    "sentence": "A cat flies through the mountains at sunset.",
     "expected": {
       "subjects": [
         "cat"
       ],
       "actions": [
-        "approaches"
+        "flies"
       ],
-      "location": "city",
+      "location": "mountains",
       "weather": "sunset",
       "style": "pixel",
       "min_scene_count": 5
@@ -497,15 +497,15 @@
   },
   {
     "id": 32,
-    "sentence": "A tiger launches through the ocean at storm.",
+    "sentence": "A tiger crosses through the forest during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
         "tiger"
       ],
       "actions": [
-        "launches"
+        "crosses"
       ],
-      "location": "ocean",
+      "location": "forest",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5
@@ -513,15 +513,15 @@
   },
   {
     "id": 33,
-    "sentence": "A astronaut runs through the palace at rain.",
+    "sentence": "An astronaut jumps through the village in the rain, as a rendered film.",
     "expected": {
       "subjects": [
         "astronaut"
       ],
       "actions": [
-        "runs"
+        "jumps"
       ],
-      "location": "palace",
+      "location": "village",
       "weather": "rain",
       "style": "rendered",
       "min_scene_count": 5
@@ -529,15 +529,15 @@
   },
   {
     "id": 34,
-    "sentence": "A train flies through the mountains at snowy.",
+    "sentence": "A robot dances through the palace on a snowy evening.",
     "expected": {
       "subjects": [
-        "train"
+        "robot"
       ],
       "actions": [
-        "flies"
+        "dances"
       ],
-      "location": "mountains",
+      "location": "palace",
       "weather": "snowy",
       "style": "pixel",
       "min_scene_count": 5
@@ -545,23 +545,7 @@
   },
   {
     "id": 35,
-    "sentence": "A ship crosses through the moon at clear.",
-    "expected": {
-      "subjects": [
-        "ship"
-      ],
-      "actions": [
-        "crosses"
-      ],
-      "location": "moon",
-      "weather": "clear",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 36,
-    "sentence": "A bird escapes through the space at night.",
+    "sentence": "A bird escapes through space under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
         "bird"
@@ -570,6 +554,22 @@
         "escapes"
       ],
       "location": "space",
+      "weather": "clear",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 36,
+    "sentence": "A ship approaches through the harbour at night, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "ship"
+      ],
+      "actions": [
+        "approaches"
+      ],
+      "location": "harbour",
       "weather": "night",
       "style": "rendered",
       "min_scene_count": 5
@@ -577,15 +577,15 @@
   },
   {
     "id": 37,
-    "sentence": "A dancer dances through the forest at sunset.",
+    "sentence": "A train launches through the ocean at sunset.",
     "expected": {
       "subjects": [
-        "dancer"
+        "train"
       ],
       "actions": [
-        "dances"
+        "launches"
       ],
-      "location": "forest",
+      "location": "ocean",
       "weather": "sunset",
       "style": "pixel",
       "min_scene_count": 5
@@ -593,15 +593,15 @@
   },
   {
     "id": 38,
-    "sentence": "A robot jumps through the desert at storm.",
+    "sentence": "A dancer runs through the moon during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
-        "robot"
+        "dancer"
       ],
       "actions": [
-        "jumps"
+        "runs"
       ],
-      "location": "desert",
+      "location": "moon",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5
@@ -609,15 +609,15 @@
   },
   {
     "id": 39,
-    "sentence": "A traveller approaches through the harbour at rain.",
+    "sentence": "A pilot flies through the desert in the rain, as a rendered film.",
     "expected": {
       "subjects": [
-        "traveller"
+        "pilot"
       ],
       "actions": [
-        "approaches"
+        "flies"
       ],
-      "location": "harbour",
+      "location": "desert",
       "weather": "rain",
       "style": "rendered",
       "min_scene_count": 5
@@ -625,15 +625,15 @@
   },
   {
     "id": 40,
-    "sentence": "A pilot launches through the village at snowy.",
+    "sentence": "A traveller crosses through the city on a snowy evening.",
     "expected": {
       "subjects": [
-        "pilot"
+        "traveller"
       ],
       "actions": [
-        "launches"
+        "crosses"
       ],
-      "location": "village",
+      "location": "city",
       "weather": "snowy",
       "style": "pixel",
       "min_scene_count": 5
@@ -641,15 +641,15 @@
   },
   {
     "id": 41,
-    "sentence": "A cat runs through the city at clear.",
+    "sentence": "A cat dances through the moon under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
         "cat"
       ],
       "actions": [
-        "runs"
+        "dances"
       ],
-      "location": "city",
+      "location": "moon",
       "weather": "clear",
       "style": "vector",
       "min_scene_count": 5
@@ -657,15 +657,15 @@
   },
   {
     "id": 42,
-    "sentence": "A tiger flies through the ocean at night.",
+    "sentence": "A tiger escapes through the desert at night, as a rendered film.",
     "expected": {
       "subjects": [
         "tiger"
       ],
       "actions": [
-        "flies"
+        "escapes"
       ],
-      "location": "ocean",
+      "location": "desert",
       "weather": "night",
       "style": "rendered",
       "min_scene_count": 5
@@ -673,15 +673,15 @@
   },
   {
     "id": 43,
-    "sentence": "A astronaut crosses through the palace at sunset.",
+    "sentence": "An astronaut approaches through the city at sunset.",
     "expected": {
       "subjects": [
         "astronaut"
       ],
       "actions": [
-        "crosses"
+        "approaches"
       ],
-      "location": "palace",
+      "location": "city",
       "weather": "sunset",
       "style": "pixel",
       "min_scene_count": 5
@@ -689,13 +689,13 @@
   },
   {
     "id": 44,
-    "sentence": "A train escapes through the mountains at storm.",
+    "sentence": "A robot launches through the mountains during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
-        "train"
+        "robot"
       ],
       "actions": [
-        "escapes"
+        "launches"
       ],
       "location": "mountains",
       "weather": "storm",
@@ -705,15 +705,15 @@
   },
   {
     "id": 45,
-    "sentence": "A ship dances through the moon at rain.",
+    "sentence": "A bird runs through the forest in the rain, as a rendered film.",
     "expected": {
       "subjects": [
-        "ship"
+        "bird"
       ],
       "actions": [
-        "dances"
+        "runs"
       ],
-      "location": "moon",
+      "location": "forest",
       "weather": "rain",
       "style": "rendered",
       "min_scene_count": 5
@@ -721,15 +721,15 @@
   },
   {
     "id": 46,
-    "sentence": "A bird jumps through the space at snowy.",
+    "sentence": "A ship flies through the village on a snowy evening.",
     "expected": {
       "subjects": [
-        "bird"
+        "ship"
       ],
       "actions": [
-        "jumps"
+        "flies"
       ],
-      "location": "space",
+      "location": "village",
       "weather": "snowy",
       "style": "pixel",
       "min_scene_count": 5
@@ -737,15 +737,15 @@
   },
   {
     "id": 47,
-    "sentence": "A dancer approaches through the forest at clear.",
+    "sentence": "A train crosses through the palace under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
-        "dancer"
+        "train"
       ],
       "actions": [
-        "approaches"
+        "crosses"
       ],
-      "location": "forest",
+      "location": "palace",
       "weather": "clear",
       "style": "vector",
       "min_scene_count": 5
@@ -753,15 +753,15 @@
   },
   {
     "id": 48,
-    "sentence": "A robot launches through the desert at night.",
+    "sentence": "A dancer jumps through space at night, as a rendered film.",
     "expected": {
       "subjects": [
-        "robot"
+        "dancer"
       ],
       "actions": [
-        "launches"
+        "jumps"
       ],
-      "location": "desert",
+      "location": "space",
       "weather": "night",
       "style": "rendered",
       "min_scene_count": 5
@@ -769,13 +769,13 @@
   },
   {
     "id": 49,
-    "sentence": "A traveller runs through the harbour at sunset.",
+    "sentence": "A pilot dances through the harbour at sunset.",
     "expected": {
       "subjects": [
-        "traveller"
+        "pilot"
       ],
       "actions": [
-        "runs"
+        "dances"
       ],
       "location": "harbour",
       "weather": "sunset",
@@ -785,15 +785,15 @@
   },
   {
     "id": 50,
-    "sentence": "A pilot flies through the village at storm.",
+    "sentence": "A traveller escapes through the ocean during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
-        "pilot"
+        "traveller"
       ],
       "actions": [
-        "flies"
+        "escapes"
       ],
-      "location": "village",
+      "location": "ocean",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5
@@ -801,15 +801,15 @@
   },
   {
     "id": 51,
-    "sentence": "A cat crosses through the city at rain.",
+    "sentence": "A cat launches through space in the rain, as a rendered film.",
     "expected": {
       "subjects": [
         "cat"
       ],
       "actions": [
-        "crosses"
+        "launches"
       ],
-      "location": "city",
+      "location": "space",
       "weather": "rain",
       "style": "rendered",
       "min_scene_count": 5
@@ -817,15 +817,15 @@
   },
   {
     "id": 52,
-    "sentence": "A tiger escapes through the ocean at snowy.",
+    "sentence": "A tiger runs through the harbour on a snowy evening.",
     "expected": {
       "subjects": [
         "tiger"
       ],
       "actions": [
-        "escapes"
+        "runs"
       ],
-      "location": "ocean",
+      "location": "harbour",
       "weather": "snowy",
       "style": "pixel",
       "min_scene_count": 5
@@ -833,15 +833,15 @@
   },
   {
     "id": 53,
-    "sentence": "A astronaut dances through the palace at clear.",
+    "sentence": "An astronaut flies through the ocean under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
         "astronaut"
       ],
       "actions": [
-        "dances"
+        "flies"
       ],
-      "location": "palace",
+      "location": "ocean",
       "weather": "clear",
       "style": "vector",
       "min_scene_count": 5
@@ -849,15 +849,15 @@
   },
   {
     "id": 54,
-    "sentence": "A train jumps through the mountains at night.",
+    "sentence": "A robot crosses through the moon at night, as a rendered film.",
     "expected": {
       "subjects": [
-        "train"
+        "robot"
       ],
       "actions": [
-        "jumps"
+        "crosses"
       ],
-      "location": "mountains",
+      "location": "moon",
       "weather": "night",
       "style": "rendered",
       "min_scene_count": 5
@@ -865,15 +865,15 @@
   },
   {
     "id": 55,
-    "sentence": "A ship approaches through the moon at sunset.",
+    "sentence": "A bird jumps through the desert at sunset.",
     "expected": {
       "subjects": [
-        "ship"
+        "bird"
       ],
       "actions": [
-        "approaches"
+        "jumps"
       ],
-      "location": "moon",
+      "location": "desert",
       "weather": "sunset",
       "style": "pixel",
       "min_scene_count": 5
@@ -881,15 +881,15 @@
   },
   {
     "id": 56,
-    "sentence": "A bird launches through the space at storm.",
+    "sentence": "A ship dances through the city during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
-        "bird"
+        "ship"
       ],
       "actions": [
-        "launches"
+        "dances"
       ],
-      "location": "space",
+      "location": "city",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5
@@ -897,15 +897,15 @@
   },
   {
     "id": 57,
-    "sentence": "A dancer runs through the forest at rain.",
+    "sentence": "A train escapes through the mountains in the rain, as a rendered film.",
     "expected": {
       "subjects": [
-        "dancer"
+        "train"
       ],
       "actions": [
-        "runs"
+        "escapes"
       ],
-      "location": "forest",
+      "location": "mountains",
       "weather": "rain",
       "style": "rendered",
       "min_scene_count": 5
@@ -913,15 +913,15 @@
   },
   {
     "id": 58,
-    "sentence": "A robot flies through the desert at snowy.",
+    "sentence": "A dancer approaches through the forest on a snowy evening.",
     "expected": {
       "subjects": [
-        "robot"
+        "dancer"
       ],
       "actions": [
-        "flies"
+        "approaches"
       ],
-      "location": "desert",
+      "location": "forest",
       "weather": "snowy",
       "style": "pixel",
       "min_scene_count": 5
@@ -929,15 +929,15 @@
   },
   {
     "id": 59,
-    "sentence": "A traveller crosses through the harbour at clear.",
+    "sentence": "A pilot launches through the village under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
-        "traveller"
+        "pilot"
       ],
       "actions": [
-        "crosses"
+        "launches"
       ],
-      "location": "harbour",
+      "location": "village",
       "weather": "clear",
       "style": "vector",
       "min_scene_count": 5
@@ -945,15 +945,15 @@
   },
   {
     "id": 60,
-    "sentence": "A pilot escapes through the village at night.",
+    "sentence": "A traveller runs through the palace at night, as a rendered film.",
     "expected": {
       "subjects": [
-        "pilot"
+        "traveller"
       ],
       "actions": [
-        "escapes"
+        "runs"
       ],
-      "location": "village",
+      "location": "palace",
       "weather": "night",
       "style": "rendered",
       "min_scene_count": 5
@@ -961,15 +961,15 @@
   },
   {
     "id": 61,
-    "sentence": "A cat dances through the city at sunset.",
+    "sentence": "A cat crosses through the forest at sunset.",
     "expected": {
       "subjects": [
         "cat"
       ],
       "actions": [
-        "dances"
+        "crosses"
       ],
-      "location": "city",
+      "location": "forest",
       "weather": "sunset",
       "style": "pixel",
       "min_scene_count": 5
@@ -977,7 +977,7 @@
   },
   {
     "id": 62,
-    "sentence": "A tiger jumps through the ocean at storm.",
+    "sentence": "A tiger jumps through the village during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
         "tiger"
@@ -985,7 +985,7 @@
       "actions": [
         "jumps"
       ],
-      "location": "ocean",
+      "location": "village",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5
@@ -993,13 +993,13 @@
   },
   {
     "id": 63,
-    "sentence": "A astronaut approaches through the palace at rain.",
+    "sentence": "An astronaut dances through the palace in the rain, as a rendered film.",
     "expected": {
       "subjects": [
         "astronaut"
       ],
       "actions": [
-        "approaches"
+        "dances"
       ],
       "location": "palace",
       "weather": "rain",
@@ -1009,71 +1009,7 @@
   },
   {
     "id": 64,
-    "sentence": "A train launches through the mountains at snowy.",
-    "expected": {
-      "subjects": [
-        "train"
-      ],
-      "actions": [
-        "launches"
-      ],
-      "location": "mountains",
-      "weather": "snowy",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 65,
-    "sentence": "A ship runs through the moon at clear.",
-    "expected": {
-      "subjects": [
-        "ship"
-      ],
-      "actions": [
-        "runs"
-      ],
-      "location": "moon",
-      "weather": "clear",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 66,
-    "sentence": "A bird flies through the space at night.",
-    "expected": {
-      "subjects": [
-        "bird"
-      ],
-      "actions": [
-        "flies"
-      ],
-      "location": "space",
-      "weather": "night",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 67,
-    "sentence": "A dancer crosses through the forest at sunset.",
-    "expected": {
-      "subjects": [
-        "dancer"
-      ],
-      "actions": [
-        "crosses"
-      ],
-      "location": "forest",
-      "weather": "sunset",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 68,
-    "sentence": "A robot escapes through the desert at storm.",
+    "sentence": "A robot escapes through space on a snowy evening.",
     "expected": {
       "subjects": [
         "robot"
@@ -1081,66 +1017,34 @@
       "actions": [
         "escapes"
       ],
-      "location": "desert",
-      "weather": "storm",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 69,
-    "sentence": "A traveller dances through the harbour at rain.",
-    "expected": {
-      "subjects": [
-        "traveller"
-      ],
-      "actions": [
-        "dances"
-      ],
-      "location": "harbour",
-      "weather": "rain",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 70,
-    "sentence": "A pilot jumps through the village at snowy.",
-    "expected": {
-      "subjects": [
-        "pilot"
-      ],
-      "actions": [
-        "jumps"
-      ],
-      "location": "village",
+      "location": "space",
       "weather": "snowy",
       "style": "pixel",
       "min_scene_count": 5
     }
   },
   {
-    "id": 71,
-    "sentence": "A cat approaches through the city at clear.",
+    "id": 65,
+    "sentence": "A bird approaches through the harbour under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
-        "cat"
+        "bird"
       ],
       "actions": [
         "approaches"
       ],
-      "location": "city",
+      "location": "harbour",
       "weather": "clear",
       "style": "vector",
       "min_scene_count": 5
     }
   },
   {
-    "id": 72,
-    "sentence": "A tiger launches through the ocean at night.",
+    "id": 66,
+    "sentence": "A ship launches through the ocean at night, as a rendered film.",
     "expected": {
       "subjects": [
-        "tiger"
+        "ship"
       ],
       "actions": [
         "launches"
@@ -1152,142 +1056,46 @@
     }
   },
   {
-    "id": 73,
-    "sentence": "A astronaut runs through the palace at sunset.",
-    "expected": {
-      "subjects": [
-        "astronaut"
-      ],
-      "actions": [
-        "runs"
-      ],
-      "location": "palace",
-      "weather": "sunset",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 74,
-    "sentence": "A train flies through the mountains at storm.",
+    "id": 67,
+    "sentence": "A train runs through the moon at sunset.",
     "expected": {
       "subjects": [
         "train"
       ],
       "actions": [
-        "flies"
-      ],
-      "location": "mountains",
-      "weather": "storm",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 75,
-    "sentence": "A ship crosses through the moon at rain.",
-    "expected": {
-      "subjects": [
-        "ship"
-      ],
-      "actions": [
-        "crosses"
+        "runs"
       ],
       "location": "moon",
-      "weather": "rain",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 76,
-    "sentence": "A bird escapes through the space at snowy.",
-    "expected": {
-      "subjects": [
-        "bird"
-      ],
-      "actions": [
-        "escapes"
-      ],
-      "location": "space",
-      "weather": "snowy",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 77,
-    "sentence": "A dancer dances through the forest at clear.",
-    "expected": {
-      "subjects": [
-        "dancer"
-      ],
-      "actions": [
-        "dances"
-      ],
-      "location": "forest",
-      "weather": "clear",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 78,
-    "sentence": "A robot jumps through the desert at night.",
-    "expected": {
-      "subjects": [
-        "robot"
-      ],
-      "actions": [
-        "jumps"
-      ],
-      "location": "desert",
-      "weather": "night",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 79,
-    "sentence": "A traveller approaches through the harbour at sunset.",
-    "expected": {
-      "subjects": [
-        "traveller"
-      ],
-      "actions": [
-        "approaches"
-      ],
-      "location": "harbour",
       "weather": "sunset",
       "style": "pixel",
       "min_scene_count": 5
     }
   },
   {
-    "id": 80,
-    "sentence": "A pilot launches through the village at storm.",
+    "id": 68,
+    "sentence": "A dancer flies through the desert during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
-        "pilot"
+        "dancer"
       ],
       "actions": [
-        "launches"
+        "flies"
       ],
-      "location": "village",
+      "location": "desert",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5
     }
   },
   {
-    "id": 81,
-    "sentence": "A cat runs through the city at rain.",
+    "id": 69,
+    "sentence": "A pilot crosses through the city in the rain, as a rendered film.",
     "expected": {
       "subjects": [
-        "cat"
+        "pilot"
       ],
       "actions": [
-        "runs"
+        "crosses"
       ],
       "location": "city",
       "weather": "rain",
@@ -1296,8 +1104,200 @@
     }
   },
   {
+    "id": 70,
+    "sentence": "A traveller jumps through the mountains on a snowy evening.",
+    "expected": {
+      "subjects": [
+        "traveller"
+      ],
+      "actions": [
+        "jumps"
+      ],
+      "location": "mountains",
+      "weather": "snowy",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 71,
+    "sentence": "A cat escapes through the desert under a clear sky, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "cat"
+      ],
+      "actions": [
+        "escapes"
+      ],
+      "location": "desert",
+      "weather": "clear",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 72,
+    "sentence": "A tiger approaches through the city at night, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "tiger"
+      ],
+      "actions": [
+        "approaches"
+      ],
+      "location": "city",
+      "weather": "night",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 73,
+    "sentence": "An astronaut launches through the mountains at sunset.",
+    "expected": {
+      "subjects": [
+        "astronaut"
+      ],
+      "actions": [
+        "launches"
+      ],
+      "location": "mountains",
+      "weather": "sunset",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 74,
+    "sentence": "A robot runs through the forest during a storm, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "robot"
+      ],
+      "actions": [
+        "runs"
+      ],
+      "location": "forest",
+      "weather": "storm",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 75,
+    "sentence": "A bird flies through the village in the rain, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "bird"
+      ],
+      "actions": [
+        "flies"
+      ],
+      "location": "village",
+      "weather": "rain",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 76,
+    "sentence": "A ship crosses through the palace on a snowy evening.",
+    "expected": {
+      "subjects": [
+        "ship"
+      ],
+      "actions": [
+        "crosses"
+      ],
+      "location": "palace",
+      "weather": "snowy",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 77,
+    "sentence": "A train jumps through space under a clear sky, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "train"
+      ],
+      "actions": [
+        "jumps"
+      ],
+      "location": "space",
+      "weather": "clear",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 78,
+    "sentence": "A dancer dances through the harbour at night, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "dancer"
+      ],
+      "actions": [
+        "dances"
+      ],
+      "location": "harbour",
+      "weather": "night",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 79,
+    "sentence": "A pilot escapes through the ocean at sunset.",
+    "expected": {
+      "subjects": [
+        "pilot"
+      ],
+      "actions": [
+        "escapes"
+      ],
+      "location": "ocean",
+      "weather": "sunset",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 80,
+    "sentence": "A traveller approaches through the moon during a storm, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "traveller"
+      ],
+      "actions": [
+        "approaches"
+      ],
+      "location": "moon",
+      "weather": "storm",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 81,
+    "sentence": "A cat runs through the harbour in the rain, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "cat"
+      ],
+      "actions": [
+        "runs"
+      ],
+      "location": "harbour",
+      "weather": "rain",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
     "id": 82,
-    "sentence": "A tiger flies through the ocean at snowy.",
+    "sentence": "A tiger flies through the ocean on a snowy evening.",
     "expected": {
       "subjects": [
         "tiger"
@@ -1313,7 +1313,7 @@
   },
   {
     "id": 83,
-    "sentence": "A astronaut crosses through the palace at clear.",
+    "sentence": "An astronaut crosses through the moon under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
         "astronaut"
@@ -1321,7 +1321,7 @@
       "actions": [
         "crosses"
       ],
-      "location": "palace",
+      "location": "moon",
       "weather": "clear",
       "style": "vector",
       "min_scene_count": 5
@@ -1329,15 +1329,15 @@
   },
   {
     "id": 84,
-    "sentence": "A train escapes through the mountains at night.",
+    "sentence": "A robot jumps through the desert at night, as a rendered film.",
     "expected": {
       "subjects": [
-        "train"
+        "robot"
       ],
       "actions": [
-        "escapes"
+        "jumps"
       ],
-      "location": "mountains",
+      "location": "desert",
       "weather": "night",
       "style": "rendered",
       "min_scene_count": 5
@@ -1345,15 +1345,15 @@
   },
   {
     "id": 85,
-    "sentence": "A ship dances through the moon at sunset.",
+    "sentence": "A bird dances through the city at sunset.",
     "expected": {
       "subjects": [
-        "ship"
+        "bird"
       ],
       "actions": [
         "dances"
       ],
-      "location": "moon",
+      "location": "city",
       "weather": "sunset",
       "style": "pixel",
       "min_scene_count": 5
@@ -1361,15 +1361,15 @@
   },
   {
     "id": 86,
-    "sentence": "A bird jumps through the space at storm.",
+    "sentence": "A ship escapes through the mountains during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
-        "bird"
+        "ship"
       ],
       "actions": [
-        "jumps"
+        "escapes"
       ],
-      "location": "space",
+      "location": "mountains",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5
@@ -1377,10 +1377,10 @@
   },
   {
     "id": 87,
-    "sentence": "A dancer approaches through the forest at rain.",
+    "sentence": "A train approaches through the forest in the rain, as a rendered film.",
     "expected": {
       "subjects": [
-        "dancer"
+        "train"
       ],
       "actions": [
         "approaches"
@@ -1393,15 +1393,15 @@
   },
   {
     "id": 88,
-    "sentence": "A robot launches through the desert at snowy.",
+    "sentence": "A dancer launches through the village on a snowy evening.",
     "expected": {
       "subjects": [
-        "robot"
+        "dancer"
       ],
       "actions": [
         "launches"
       ],
-      "location": "desert",
+      "location": "village",
       "weather": "snowy",
       "style": "pixel",
       "min_scene_count": 5
@@ -1409,15 +1409,15 @@
   },
   {
     "id": 89,
-    "sentence": "A traveller runs through the harbour at clear.",
+    "sentence": "A pilot runs through the palace under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
-        "traveller"
+        "pilot"
       ],
       "actions": [
         "runs"
       ],
-      "location": "harbour",
+      "location": "palace",
       "weather": "clear",
       "style": "vector",
       "min_scene_count": 5
@@ -1425,109 +1425,13 @@
   },
   {
     "id": 90,
-    "sentence": "A pilot flies through the village at night.",
+    "sentence": "A traveller flies through space at night, as a rendered film.",
     "expected": {
       "subjects": [
-        "pilot"
+        "traveller"
       ],
       "actions": [
         "flies"
-      ],
-      "location": "village",
-      "weather": "night",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 91,
-    "sentence": "A cat crosses through the city at sunset.",
-    "expected": {
-      "subjects": [
-        "cat"
-      ],
-      "actions": [
-        "crosses"
-      ],
-      "location": "city",
-      "weather": "sunset",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 92,
-    "sentence": "A tiger escapes through the ocean at storm.",
-    "expected": {
-      "subjects": [
-        "tiger"
-      ],
-      "actions": [
-        "escapes"
-      ],
-      "location": "ocean",
-      "weather": "storm",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 93,
-    "sentence": "A astronaut dances through the palace at rain.",
-    "expected": {
-      "subjects": [
-        "astronaut"
-      ],
-      "actions": [
-        "dances"
-      ],
-      "location": "palace",
-      "weather": "rain",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 94,
-    "sentence": "A train jumps through the mountains at snowy.",
-    "expected": {
-      "subjects": [
-        "train"
-      ],
-      "actions": [
-        "jumps"
-      ],
-      "location": "mountains",
-      "weather": "snowy",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 95,
-    "sentence": "A ship approaches through the moon at clear.",
-    "expected": {
-      "subjects": [
-        "ship"
-      ],
-      "actions": [
-        "approaches"
-      ],
-      "location": "moon",
-      "weather": "clear",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 96,
-    "sentence": "A bird launches through the space at night.",
-    "expected": {
-      "subjects": [
-        "bird"
-      ],
-      "actions": [
-        "launches"
       ],
       "location": "space",
       "weather": "night",
@@ -1536,16 +1440,112 @@
     }
   },
   {
-    "id": 97,
-    "sentence": "A dancer runs through the forest at sunset.",
+    "id": 91,
+    "sentence": "A cat jumps through the village at sunset.",
     "expected": {
       "subjects": [
-        "dancer"
+        "cat"
+      ],
+      "actions": [
+        "jumps"
+      ],
+      "location": "village",
+      "weather": "sunset",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 92,
+    "sentence": "A tiger dances through the palace during a storm, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "tiger"
+      ],
+      "actions": [
+        "dances"
+      ],
+      "location": "palace",
+      "weather": "storm",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 93,
+    "sentence": "An astronaut escapes through space in the rain, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "astronaut"
+      ],
+      "actions": [
+        "escapes"
+      ],
+      "location": "space",
+      "weather": "rain",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 94,
+    "sentence": "A robot approaches through the harbour on a snowy evening.",
+    "expected": {
+      "subjects": [
+        "robot"
+      ],
+      "actions": [
+        "approaches"
+      ],
+      "location": "harbour",
+      "weather": "snowy",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 95,
+    "sentence": "A bird launches through the ocean under a clear sky, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "bird"
+      ],
+      "actions": [
+        "launches"
+      ],
+      "location": "ocean",
+      "weather": "clear",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 96,
+    "sentence": "A ship runs through the moon at night, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "ship"
       ],
       "actions": [
         "runs"
       ],
-      "location": "forest",
+      "location": "moon",
+      "weather": "night",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 97,
+    "sentence": "A train flies through the desert at sunset.",
+    "expected": {
+      "subjects": [
+        "train"
+      ],
+      "actions": [
+        "flies"
+      ],
+      "location": "desert",
       "weather": "sunset",
       "style": "pixel",
       "min_scene_count": 5
@@ -1553,15 +1553,15 @@
   },
   {
     "id": 98,
-    "sentence": "A robot flies through the desert at storm.",
+    "sentence": "A dancer crosses through the city during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
-        "robot"
+        "dancer"
       ],
       "actions": [
-        "flies"
+        "crosses"
       ],
-      "location": "desert",
+      "location": "city",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5
@@ -1569,15 +1569,15 @@
   },
   {
     "id": 99,
-    "sentence": "A traveller crosses through the harbour at rain.",
+    "sentence": "A pilot jumps through the mountains in the rain, as a rendered film.",
     "expected": {
       "subjects": [
-        "traveller"
+        "pilot"
       ],
       "actions": [
-        "crosses"
+        "jumps"
       ],
-      "location": "harbour",
+      "location": "mountains",
       "weather": "rain",
       "style": "rendered",
       "min_scene_count": 5
@@ -1585,15 +1585,15 @@
   },
   {
     "id": 100,
-    "sentence": "A pilot escapes through the village at snowy.",
+    "sentence": "A traveller dances through the forest on a snowy evening.",
     "expected": {
       "subjects": [
-        "pilot"
+        "traveller"
       ],
       "actions": [
-        "escapes"
+        "dances"
       ],
-      "location": "village",
+      "location": "forest",
       "weather": "snowy",
       "style": "pixel",
       "min_scene_count": 5
@@ -1601,13 +1601,13 @@
   },
   {
     "id": 101,
-    "sentence": "A cat dances through the city at clear.",
+    "sentence": "A cat approaches through the city under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
         "cat"
       ],
       "actions": [
-        "dances"
+        "approaches"
       ],
       "location": "city",
       "weather": "clear",
@@ -1617,15 +1617,15 @@
   },
   {
     "id": 102,
-    "sentence": "A tiger jumps through the ocean at night.",
+    "sentence": "A tiger launches through the mountains at night, as a rendered film.",
     "expected": {
       "subjects": [
         "tiger"
       ],
       "actions": [
-        "jumps"
+        "launches"
       ],
-      "location": "ocean",
+      "location": "mountains",
       "weather": "night",
       "style": "rendered",
       "min_scene_count": 5
@@ -1633,15 +1633,15 @@
   },
   {
     "id": 103,
-    "sentence": "A astronaut approaches through the palace at sunset.",
+    "sentence": "An astronaut runs through the forest at sunset.",
     "expected": {
       "subjects": [
         "astronaut"
       ],
       "actions": [
-        "approaches"
+        "runs"
       ],
-      "location": "palace",
+      "location": "forest",
       "weather": "sunset",
       "style": "pixel",
       "min_scene_count": 5
@@ -1649,15 +1649,15 @@
   },
   {
     "id": 104,
-    "sentence": "A train launches through the mountains at storm.",
+    "sentence": "A robot flies through the village during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
-        "train"
+        "robot"
       ],
       "actions": [
-        "launches"
+        "flies"
       ],
-      "location": "mountains",
+      "location": "village",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5
@@ -1665,15 +1665,15 @@
   },
   {
     "id": 105,
-    "sentence": "A ship runs through the moon at rain.",
+    "sentence": "A bird crosses through the palace in the rain, as a rendered film.",
     "expected": {
       "subjects": [
-        "ship"
+        "bird"
       ],
       "actions": [
-        "runs"
+        "crosses"
       ],
-      "location": "moon",
+      "location": "palace",
       "weather": "rain",
       "style": "rendered",
       "min_scene_count": 5
@@ -1681,13 +1681,13 @@
   },
   {
     "id": 106,
-    "sentence": "A bird flies through the space at snowy.",
+    "sentence": "A ship jumps through space on a snowy evening.",
     "expected": {
       "subjects": [
-        "bird"
+        "ship"
       ],
       "actions": [
-        "flies"
+        "jumps"
       ],
       "location": "space",
       "weather": "snowy",
@@ -1697,15 +1697,15 @@
   },
   {
     "id": 107,
-    "sentence": "A dancer crosses through the forest at clear.",
+    "sentence": "A train dances through the harbour under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
-        "dancer"
+        "train"
       ],
       "actions": [
-        "crosses"
+        "dances"
       ],
-      "location": "forest",
+      "location": "harbour",
       "weather": "clear",
       "style": "vector",
       "min_scene_count": 5
@@ -1713,15 +1713,15 @@
   },
   {
     "id": 108,
-    "sentence": "A robot escapes through the desert at night.",
+    "sentence": "A dancer escapes through the ocean at night, as a rendered film.",
     "expected": {
       "subjects": [
-        "robot"
+        "dancer"
       ],
       "actions": [
         "escapes"
       ],
-      "location": "desert",
+      "location": "ocean",
       "weather": "night",
       "style": "rendered",
       "min_scene_count": 5
@@ -1729,109 +1729,13 @@
   },
   {
     "id": 109,
-    "sentence": "A traveller dances through the harbour at sunset.",
-    "expected": {
-      "subjects": [
-        "traveller"
-      ],
-      "actions": [
-        "dances"
-      ],
-      "location": "harbour",
-      "weather": "sunset",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 110,
-    "sentence": "A pilot jumps through the village at storm.",
+    "sentence": "A pilot approaches through the moon at sunset.",
     "expected": {
       "subjects": [
         "pilot"
       ],
       "actions": [
-        "jumps"
-      ],
-      "location": "village",
-      "weather": "storm",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 111,
-    "sentence": "A cat approaches through the city at rain.",
-    "expected": {
-      "subjects": [
-        "cat"
-      ],
-      "actions": [
         "approaches"
-      ],
-      "location": "city",
-      "weather": "rain",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 112,
-    "sentence": "A tiger launches through the ocean at snowy.",
-    "expected": {
-      "subjects": [
-        "tiger"
-      ],
-      "actions": [
-        "launches"
-      ],
-      "location": "ocean",
-      "weather": "snowy",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 113,
-    "sentence": "A astronaut runs through the palace at clear.",
-    "expected": {
-      "subjects": [
-        "astronaut"
-      ],
-      "actions": [
-        "runs"
-      ],
-      "location": "palace",
-      "weather": "clear",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 114,
-    "sentence": "A train flies through the mountains at night.",
-    "expected": {
-      "subjects": [
-        "train"
-      ],
-      "actions": [
-        "flies"
-      ],
-      "location": "mountains",
-      "weather": "night",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 115,
-    "sentence": "A ship crosses through the moon at sunset.",
-    "expected": {
-      "subjects": [
-        "ship"
-      ],
-      "actions": [
-        "crosses"
       ],
       "location": "moon",
       "weather": "sunset",
@@ -1840,11 +1744,203 @@
     }
   },
   {
-    "id": 116,
-    "sentence": "A bird escapes through the space at storm.",
+    "id": 110,
+    "sentence": "A traveller launches through the desert during a storm, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "traveller"
+      ],
+      "actions": [
+        "launches"
+      ],
+      "location": "desert",
+      "weather": "storm",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 111,
+    "sentence": "A cat flies through the ocean in the rain, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "cat"
+      ],
+      "actions": [
+        "flies"
+      ],
+      "location": "ocean",
+      "weather": "rain",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 112,
+    "sentence": "A tiger crosses through the moon on a snowy evening.",
+    "expected": {
+      "subjects": [
+        "tiger"
+      ],
+      "actions": [
+        "crosses"
+      ],
+      "location": "moon",
+      "weather": "snowy",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 113,
+    "sentence": "An astronaut jumps through the desert under a clear sky, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "astronaut"
+      ],
+      "actions": [
+        "jumps"
+      ],
+      "location": "desert",
+      "weather": "clear",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 114,
+    "sentence": "A robot dances through the city at night, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "robot"
+      ],
+      "actions": [
+        "dances"
+      ],
+      "location": "city",
+      "weather": "night",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 115,
+    "sentence": "A bird escapes through the mountains at sunset.",
     "expected": {
       "subjects": [
         "bird"
+      ],
+      "actions": [
+        "escapes"
+      ],
+      "location": "mountains",
+      "weather": "sunset",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 116,
+    "sentence": "A ship approaches through the forest during a storm, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "ship"
+      ],
+      "actions": [
+        "approaches"
+      ],
+      "location": "forest",
+      "weather": "storm",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 117,
+    "sentence": "A train launches through the village in the rain, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "train"
+      ],
+      "actions": [
+        "launches"
+      ],
+      "location": "village",
+      "weather": "rain",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 118,
+    "sentence": "A dancer runs through the palace on a snowy evening.",
+    "expected": {
+      "subjects": [
+        "dancer"
+      ],
+      "actions": [
+        "runs"
+      ],
+      "location": "palace",
+      "weather": "snowy",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 119,
+    "sentence": "A pilot flies through space under a clear sky, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "pilot"
+      ],
+      "actions": [
+        "flies"
+      ],
+      "location": "space",
+      "weather": "clear",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 120,
+    "sentence": "A traveller crosses through the harbour at night, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "traveller"
+      ],
+      "actions": [
+        "crosses"
+      ],
+      "location": "harbour",
+      "weather": "night",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 121,
+    "sentence": "A cat dances through the palace at sunset.",
+    "expected": {
+      "subjects": [
+        "cat"
+      ],
+      "actions": [
+        "dances"
+      ],
+      "location": "palace",
+      "weather": "sunset",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 122,
+    "sentence": "A tiger escapes through space during a storm, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "tiger"
       ],
       "actions": [
         "escapes"
@@ -1856,112 +1952,16 @@
     }
   },
   {
-    "id": 117,
-    "sentence": "A dancer dances through the forest at rain.",
-    "expected": {
-      "subjects": [
-        "dancer"
-      ],
-      "actions": [
-        "dances"
-      ],
-      "location": "forest",
-      "weather": "rain",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 118,
-    "sentence": "A robot jumps through the desert at snowy.",
-    "expected": {
-      "subjects": [
-        "robot"
-      ],
-      "actions": [
-        "jumps"
-      ],
-      "location": "desert",
-      "weather": "snowy",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 119,
-    "sentence": "A traveller approaches through the harbour at clear.",
-    "expected": {
-      "subjects": [
-        "traveller"
-      ],
-      "actions": [
-        "approaches"
-      ],
-      "location": "harbour",
-      "weather": "clear",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 120,
-    "sentence": "A pilot launches through the village at night.",
-    "expected": {
-      "subjects": [
-        "pilot"
-      ],
-      "actions": [
-        "launches"
-      ],
-      "location": "village",
-      "weather": "night",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 121,
-    "sentence": "A cat runs through the city at sunset.",
-    "expected": {
-      "subjects": [
-        "cat"
-      ],
-      "actions": [
-        "runs"
-      ],
-      "location": "city",
-      "weather": "sunset",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 122,
-    "sentence": "A tiger flies through the ocean at storm.",
-    "expected": {
-      "subjects": [
-        "tiger"
-      ],
-      "actions": [
-        "flies"
-      ],
-      "location": "ocean",
-      "weather": "storm",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
     "id": 123,
-    "sentence": "A astronaut crosses through the palace at rain.",
+    "sentence": "An astronaut approaches through the harbour in the rain, as a rendered film.",
     "expected": {
       "subjects": [
         "astronaut"
       ],
       "actions": [
-        "crosses"
+        "approaches"
       ],
-      "location": "palace",
+      "location": "harbour",
       "weather": "rain",
       "style": "rendered",
       "min_scene_count": 5
@@ -1969,15 +1969,15 @@
   },
   {
     "id": 124,
-    "sentence": "A train escapes through the mountains at snowy.",
+    "sentence": "A robot launches through the ocean on a snowy evening.",
     "expected": {
       "subjects": [
-        "train"
+        "robot"
       ],
       "actions": [
-        "escapes"
+        "launches"
       ],
-      "location": "mountains",
+      "location": "ocean",
       "weather": "snowy",
       "style": "pixel",
       "min_scene_count": 5
@@ -1985,13 +1985,13 @@
   },
   {
     "id": 125,
-    "sentence": "A ship dances through the moon at clear.",
+    "sentence": "A bird runs through the moon under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
-        "ship"
+        "bird"
       ],
       "actions": [
-        "dances"
+        "runs"
       ],
       "location": "moon",
       "weather": "clear",
@@ -2001,15 +2001,15 @@
   },
   {
     "id": 126,
-    "sentence": "A bird jumps through the space at night.",
+    "sentence": "A ship flies through the desert at night, as a rendered film.",
     "expected": {
       "subjects": [
-        "bird"
+        "ship"
       ],
       "actions": [
-        "jumps"
+        "flies"
       ],
-      "location": "space",
+      "location": "desert",
       "weather": "night",
       "style": "rendered",
       "min_scene_count": 5
@@ -2017,15 +2017,15 @@
   },
   {
     "id": 127,
-    "sentence": "A dancer approaches through the forest at sunset.",
+    "sentence": "A train crosses through the city at sunset.",
     "expected": {
       "subjects": [
-        "dancer"
+        "train"
       ],
       "actions": [
-        "approaches"
+        "crosses"
       ],
-      "location": "forest",
+      "location": "city",
       "weather": "sunset",
       "style": "pixel",
       "min_scene_count": 5
@@ -2033,15 +2033,15 @@
   },
   {
     "id": 128,
-    "sentence": "A robot launches through the desert at storm.",
+    "sentence": "A dancer jumps through the mountains during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
-        "robot"
+        "dancer"
       ],
       "actions": [
-        "launches"
+        "jumps"
       ],
-      "location": "desert",
+      "location": "mountains",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5
@@ -2049,15 +2049,15 @@
   },
   {
     "id": 129,
-    "sentence": "A traveller runs through the harbour at rain.",
+    "sentence": "A pilot dances through the forest in the rain, as a rendered film.",
     "expected": {
       "subjects": [
-        "traveller"
+        "pilot"
       ],
       "actions": [
-        "runs"
+        "dances"
       ],
-      "location": "harbour",
+      "location": "forest",
       "weather": "rain",
       "style": "rendered",
       "min_scene_count": 5
@@ -2065,13 +2065,13 @@
   },
   {
     "id": 130,
-    "sentence": "A pilot flies through the village at snowy.",
+    "sentence": "A traveller escapes through the village on a snowy evening.",
     "expected": {
       "subjects": [
-        "pilot"
+        "traveller"
       ],
       "actions": [
-        "flies"
+        "escapes"
       ],
       "location": "village",
       "weather": "snowy",
@@ -2081,15 +2081,15 @@
   },
   {
     "id": 131,
-    "sentence": "A cat crosses through the city at clear.",
+    "sentence": "A cat launches through the mountains under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
         "cat"
       ],
       "actions": [
-        "crosses"
+        "launches"
       ],
-      "location": "city",
+      "location": "mountains",
       "weather": "clear",
       "style": "vector",
       "min_scene_count": 5
@@ -2097,15 +2097,15 @@
   },
   {
     "id": 132,
-    "sentence": "A tiger escapes through the ocean at night.",
+    "sentence": "A tiger runs through the forest at night, as a rendered film.",
     "expected": {
       "subjects": [
         "tiger"
       ],
       "actions": [
-        "escapes"
+        "runs"
       ],
-      "location": "ocean",
+      "location": "forest",
       "weather": "night",
       "style": "rendered",
       "min_scene_count": 5
@@ -2113,15 +2113,15 @@
   },
   {
     "id": 133,
-    "sentence": "A astronaut dances through the palace at sunset.",
+    "sentence": "An astronaut flies through the village at sunset.",
     "expected": {
       "subjects": [
         "astronaut"
       ],
       "actions": [
-        "dances"
+        "flies"
       ],
-      "location": "palace",
+      "location": "village",
       "weather": "sunset",
       "style": "pixel",
       "min_scene_count": 5
@@ -2129,15 +2129,15 @@
   },
   {
     "id": 134,
-    "sentence": "A train jumps through the mountains at storm.",
+    "sentence": "A robot crosses through the palace during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
-        "train"
+        "robot"
       ],
       "actions": [
-        "jumps"
+        "crosses"
       ],
-      "location": "mountains",
+      "location": "palace",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5
@@ -2145,13 +2145,109 @@
   },
   {
     "id": 135,
-    "sentence": "A ship approaches through the moon at rain.",
+    "sentence": "A bird jumps through space in the rain, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "bird"
+      ],
+      "actions": [
+        "jumps"
+      ],
+      "location": "space",
+      "weather": "rain",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 136,
+    "sentence": "A ship dances through the harbour on a snowy evening.",
     "expected": {
       "subjects": [
         "ship"
       ],
       "actions": [
+        "dances"
+      ],
+      "location": "harbour",
+      "weather": "snowy",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 137,
+    "sentence": "A train escapes through the ocean under a clear sky, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "train"
+      ],
+      "actions": [
+        "escapes"
+      ],
+      "location": "ocean",
+      "weather": "clear",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 138,
+    "sentence": "A dancer approaches through the moon at night, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "dancer"
+      ],
+      "actions": [
         "approaches"
+      ],
+      "location": "moon",
+      "weather": "night",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 139,
+    "sentence": "A pilot launches through the desert at sunset.",
+    "expected": {
+      "subjects": [
+        "pilot"
+      ],
+      "actions": [
+        "launches"
+      ],
+      "location": "desert",
+      "weather": "sunset",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 140,
+    "sentence": "A traveller runs through the city during a storm, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "traveller"
+      ],
+      "actions": [
+        "runs"
+      ],
+      "location": "city",
+      "weather": "storm",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 141,
+    "sentence": "A cat crosses through the moon in the rain, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "cat"
+      ],
+      "actions": [
+        "crosses"
       ],
       "location": "moon",
       "weather": "rain",
@@ -2160,104 +2256,8 @@
     }
   },
   {
-    "id": 136,
-    "sentence": "A bird launches through the space at snowy.",
-    "expected": {
-      "subjects": [
-        "bird"
-      ],
-      "actions": [
-        "launches"
-      ],
-      "location": "space",
-      "weather": "snowy",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 137,
-    "sentence": "A dancer runs through the forest at clear.",
-    "expected": {
-      "subjects": [
-        "dancer"
-      ],
-      "actions": [
-        "runs"
-      ],
-      "location": "forest",
-      "weather": "clear",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 138,
-    "sentence": "A robot flies through the desert at night.",
-    "expected": {
-      "subjects": [
-        "robot"
-      ],
-      "actions": [
-        "flies"
-      ],
-      "location": "desert",
-      "weather": "night",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 139,
-    "sentence": "A traveller crosses through the harbour at sunset.",
-    "expected": {
-      "subjects": [
-        "traveller"
-      ],
-      "actions": [
-        "crosses"
-      ],
-      "location": "harbour",
-      "weather": "sunset",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 140,
-    "sentence": "A pilot escapes through the village at storm.",
-    "expected": {
-      "subjects": [
-        "pilot"
-      ],
-      "actions": [
-        "escapes"
-      ],
-      "location": "village",
-      "weather": "storm",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 141,
-    "sentence": "A cat dances through the city at rain.",
-    "expected": {
-      "subjects": [
-        "cat"
-      ],
-      "actions": [
-        "dances"
-      ],
-      "location": "city",
-      "weather": "rain",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
     "id": 142,
-    "sentence": "A tiger jumps through the ocean at snowy.",
+    "sentence": "A tiger jumps through the desert on a snowy evening.",
     "expected": {
       "subjects": [
         "tiger"
@@ -2265,7 +2265,7 @@
       "actions": [
         "jumps"
       ],
-      "location": "ocean",
+      "location": "desert",
       "weather": "snowy",
       "style": "pixel",
       "min_scene_count": 5
@@ -2273,15 +2273,15 @@
   },
   {
     "id": 143,
-    "sentence": "A astronaut approaches through the palace at clear.",
+    "sentence": "An astronaut dances through the city under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
         "astronaut"
       ],
       "actions": [
-        "approaches"
+        "dances"
       ],
-      "location": "palace",
+      "location": "city",
       "weather": "clear",
       "style": "vector",
       "min_scene_count": 5
@@ -2289,13 +2289,13 @@
   },
   {
     "id": 144,
-    "sentence": "A train launches through the mountains at night.",
+    "sentence": "A robot escapes through the mountains at night, as a rendered film.",
     "expected": {
       "subjects": [
-        "train"
+        "robot"
       ],
       "actions": [
-        "launches"
+        "escapes"
       ],
       "location": "mountains",
       "weather": "night",
@@ -2305,15 +2305,15 @@
   },
   {
     "id": 145,
-    "sentence": "A ship runs through the moon at sunset.",
+    "sentence": "A bird approaches through the forest at sunset.",
     "expected": {
       "subjects": [
-        "ship"
+        "bird"
       ],
       "actions": [
-        "runs"
+        "approaches"
       ],
-      "location": "moon",
+      "location": "forest",
       "weather": "sunset",
       "style": "pixel",
       "min_scene_count": 5
@@ -2321,15 +2321,15 @@
   },
   {
     "id": 146,
-    "sentence": "A bird flies through the space at storm.",
+    "sentence": "A ship launches through the village during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
-        "bird"
+        "ship"
       ],
       "actions": [
-        "flies"
+        "launches"
       ],
-      "location": "space",
+      "location": "village",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5
@@ -2337,106 +2337,10 @@
   },
   {
     "id": 147,
-    "sentence": "A dancer crosses through the forest at rain.",
+    "sentence": "A train runs through the palace in the rain, as a rendered film.",
     "expected": {
       "subjects": [
-        "dancer"
-      ],
-      "actions": [
-        "crosses"
-      ],
-      "location": "forest",
-      "weather": "rain",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 148,
-    "sentence": "A robot escapes through the desert at snowy.",
-    "expected": {
-      "subjects": [
-        "robot"
-      ],
-      "actions": [
-        "escapes"
-      ],
-      "location": "desert",
-      "weather": "snowy",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 149,
-    "sentence": "A traveller dances through the harbour at clear.",
-    "expected": {
-      "subjects": [
-        "traveller"
-      ],
-      "actions": [
-        "dances"
-      ],
-      "location": "harbour",
-      "weather": "clear",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 150,
-    "sentence": "A pilot jumps through the village at night.",
-    "expected": {
-      "subjects": [
-        "pilot"
-      ],
-      "actions": [
-        "jumps"
-      ],
-      "location": "village",
-      "weather": "night",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 151,
-    "sentence": "A cat approaches through the city at sunset.",
-    "expected": {
-      "subjects": [
-        "cat"
-      ],
-      "actions": [
-        "approaches"
-      ],
-      "location": "city",
-      "weather": "sunset",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 152,
-    "sentence": "A tiger launches through the ocean at storm.",
-    "expected": {
-      "subjects": [
-        "tiger"
-      ],
-      "actions": [
-        "launches"
-      ],
-      "location": "ocean",
-      "weather": "storm",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 153,
-    "sentence": "A astronaut runs through the palace at rain.",
-    "expected": {
-      "subjects": [
-        "astronaut"
+        "train"
       ],
       "actions": [
         "runs"
@@ -2448,142 +2352,46 @@
     }
   },
   {
-    "id": 154,
-    "sentence": "A train flies through the mountains at snowy.",
-    "expected": {
-      "subjects": [
-        "train"
-      ],
-      "actions": [
-        "flies"
-      ],
-      "location": "mountains",
-      "weather": "snowy",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 155,
-    "sentence": "A ship crosses through the moon at clear.",
-    "expected": {
-      "subjects": [
-        "ship"
-      ],
-      "actions": [
-        "crosses"
-      ],
-      "location": "moon",
-      "weather": "clear",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 156,
-    "sentence": "A bird escapes through the space at night.",
-    "expected": {
-      "subjects": [
-        "bird"
-      ],
-      "actions": [
-        "escapes"
-      ],
-      "location": "space",
-      "weather": "night",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 157,
-    "sentence": "A dancer dances through the forest at sunset.",
+    "id": 148,
+    "sentence": "A dancer flies through space on a snowy evening.",
     "expected": {
       "subjects": [
         "dancer"
       ],
       "actions": [
-        "dances"
+        "flies"
       ],
-      "location": "forest",
-      "weather": "sunset",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 158,
-    "sentence": "A robot jumps through the desert at storm.",
-    "expected": {
-      "subjects": [
-        "robot"
-      ],
-      "actions": [
-        "jumps"
-      ],
-      "location": "desert",
-      "weather": "storm",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 159,
-    "sentence": "A traveller approaches through the harbour at rain.",
-    "expected": {
-      "subjects": [
-        "traveller"
-      ],
-      "actions": [
-        "approaches"
-      ],
-      "location": "harbour",
-      "weather": "rain",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 160,
-    "sentence": "A pilot launches through the village at snowy.",
-    "expected": {
-      "subjects": [
-        "pilot"
-      ],
-      "actions": [
-        "launches"
-      ],
-      "location": "village",
+      "location": "space",
       "weather": "snowy",
       "style": "pixel",
       "min_scene_count": 5
     }
   },
   {
-    "id": 161,
-    "sentence": "A cat runs through the city at clear.",
+    "id": 149,
+    "sentence": "A pilot crosses through the harbour under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
-        "cat"
+        "pilot"
       ],
       "actions": [
-        "runs"
+        "crosses"
       ],
-      "location": "city",
+      "location": "harbour",
       "weather": "clear",
       "style": "vector",
       "min_scene_count": 5
     }
   },
   {
-    "id": 162,
-    "sentence": "A tiger flies through the ocean at night.",
+    "id": 150,
+    "sentence": "A traveller jumps through the ocean at night, as a rendered film.",
     "expected": {
       "subjects": [
-        "tiger"
+        "traveller"
       ],
       "actions": [
-        "flies"
+        "jumps"
       ],
       "location": "ocean",
       "weather": "night",
@@ -2592,8 +2400,200 @@
     }
   },
   {
+    "id": 151,
+    "sentence": "A cat escapes through space at sunset.",
+    "expected": {
+      "subjects": [
+        "cat"
+      ],
+      "actions": [
+        "escapes"
+      ],
+      "location": "space",
+      "weather": "sunset",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 152,
+    "sentence": "A tiger approaches through the harbour during a storm, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "tiger"
+      ],
+      "actions": [
+        "approaches"
+      ],
+      "location": "harbour",
+      "weather": "storm",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 153,
+    "sentence": "An astronaut launches through the ocean in the rain, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "astronaut"
+      ],
+      "actions": [
+        "launches"
+      ],
+      "location": "ocean",
+      "weather": "rain",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 154,
+    "sentence": "A robot runs through the moon on a snowy evening.",
+    "expected": {
+      "subjects": [
+        "robot"
+      ],
+      "actions": [
+        "runs"
+      ],
+      "location": "moon",
+      "weather": "snowy",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 155,
+    "sentence": "A bird flies through the desert under a clear sky, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "bird"
+      ],
+      "actions": [
+        "flies"
+      ],
+      "location": "desert",
+      "weather": "clear",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 156,
+    "sentence": "A ship crosses through the city at night, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "ship"
+      ],
+      "actions": [
+        "crosses"
+      ],
+      "location": "city",
+      "weather": "night",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 157,
+    "sentence": "A train jumps through the mountains at sunset.",
+    "expected": {
+      "subjects": [
+        "train"
+      ],
+      "actions": [
+        "jumps"
+      ],
+      "location": "mountains",
+      "weather": "sunset",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 158,
+    "sentence": "A dancer dances through the forest during a storm, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "dancer"
+      ],
+      "actions": [
+        "dances"
+      ],
+      "location": "forest",
+      "weather": "storm",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 159,
+    "sentence": "A pilot escapes through the village in the rain, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "pilot"
+      ],
+      "actions": [
+        "escapes"
+      ],
+      "location": "village",
+      "weather": "rain",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 160,
+    "sentence": "A traveller approaches through the palace on a snowy evening.",
+    "expected": {
+      "subjects": [
+        "traveller"
+      ],
+      "actions": [
+        "approaches"
+      ],
+      "location": "palace",
+      "weather": "snowy",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 161,
+    "sentence": "A cat runs through the forest under a clear sky, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "cat"
+      ],
+      "actions": [
+        "runs"
+      ],
+      "location": "forest",
+      "weather": "clear",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 162,
+    "sentence": "A tiger flies through the village at night, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "tiger"
+      ],
+      "actions": [
+        "flies"
+      ],
+      "location": "village",
+      "weather": "night",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
     "id": 163,
-    "sentence": "A astronaut crosses through the palace at sunset.",
+    "sentence": "An astronaut crosses through the palace at sunset.",
     "expected": {
       "subjects": [
         "astronaut"
@@ -2609,15 +2609,15 @@
   },
   {
     "id": 164,
-    "sentence": "A train escapes through the mountains at storm.",
+    "sentence": "A robot jumps through space during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
-        "train"
+        "robot"
       ],
       "actions": [
-        "escapes"
+        "jumps"
       ],
-      "location": "mountains",
+      "location": "space",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5
@@ -2625,15 +2625,15 @@
   },
   {
     "id": 165,
-    "sentence": "A ship dances through the moon at rain.",
+    "sentence": "A bird dances through the harbour in the rain, as a rendered film.",
     "expected": {
       "subjects": [
-        "ship"
+        "bird"
       ],
       "actions": [
         "dances"
       ],
-      "location": "moon",
+      "location": "harbour",
       "weather": "rain",
       "style": "rendered",
       "min_scene_count": 5
@@ -2641,15 +2641,15 @@
   },
   {
     "id": 166,
-    "sentence": "A bird jumps through the space at snowy.",
+    "sentence": "A ship escapes through the ocean on a snowy evening.",
     "expected": {
       "subjects": [
-        "bird"
+        "ship"
       ],
       "actions": [
-        "jumps"
+        "escapes"
       ],
-      "location": "space",
+      "location": "ocean",
       "weather": "snowy",
       "style": "pixel",
       "min_scene_count": 5
@@ -2657,15 +2657,15 @@
   },
   {
     "id": 167,
-    "sentence": "A dancer approaches through the forest at clear.",
+    "sentence": "A train approaches through the moon under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
-        "dancer"
+        "train"
       ],
       "actions": [
         "approaches"
       ],
-      "location": "forest",
+      "location": "moon",
       "weather": "clear",
       "style": "vector",
       "min_scene_count": 5
@@ -2673,10 +2673,10 @@
   },
   {
     "id": 168,
-    "sentence": "A robot launches through the desert at night.",
+    "sentence": "A dancer launches through the desert at night, as a rendered film.",
     "expected": {
       "subjects": [
-        "robot"
+        "dancer"
       ],
       "actions": [
         "launches"
@@ -2689,15 +2689,15 @@
   },
   {
     "id": 169,
-    "sentence": "A traveller runs through the harbour at sunset.",
+    "sentence": "A pilot runs through the city at sunset.",
     "expected": {
       "subjects": [
-        "traveller"
+        "pilot"
       ],
       "actions": [
         "runs"
       ],
-      "location": "harbour",
+      "location": "city",
       "weather": "sunset",
       "style": "pixel",
       "min_scene_count": 5
@@ -2705,15 +2705,15 @@
   },
   {
     "id": 170,
-    "sentence": "A pilot flies through the village at storm.",
+    "sentence": "A traveller flies through the mountains during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
-        "pilot"
+        "traveller"
       ],
       "actions": [
         "flies"
       ],
-      "location": "village",
+      "location": "mountains",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5
@@ -2721,15 +2721,15 @@
   },
   {
     "id": 171,
-    "sentence": "A cat crosses through the city at rain.",
+    "sentence": "A cat jumps through the desert in the rain, as a rendered film.",
     "expected": {
       "subjects": [
         "cat"
       ],
       "actions": [
-        "crosses"
+        "jumps"
       ],
-      "location": "city",
+      "location": "desert",
       "weather": "rain",
       "style": "rendered",
       "min_scene_count": 5
@@ -2737,15 +2737,15 @@
   },
   {
     "id": 172,
-    "sentence": "A tiger escapes through the ocean at snowy.",
+    "sentence": "A tiger dances through the city on a snowy evening.",
     "expected": {
       "subjects": [
         "tiger"
       ],
       "actions": [
-        "escapes"
+        "dances"
       ],
-      "location": "ocean",
+      "location": "city",
       "weather": "snowy",
       "style": "pixel",
       "min_scene_count": 5
@@ -2753,15 +2753,15 @@
   },
   {
     "id": 173,
-    "sentence": "A astronaut dances through the palace at clear.",
+    "sentence": "An astronaut escapes through the mountains under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
         "astronaut"
       ],
       "actions": [
-        "dances"
+        "escapes"
       ],
-      "location": "palace",
+      "location": "mountains",
       "weather": "clear",
       "style": "vector",
       "min_scene_count": 5
@@ -2769,15 +2769,15 @@
   },
   {
     "id": 174,
-    "sentence": "A train jumps through the mountains at night.",
+    "sentence": "A robot approaches through the forest at night, as a rendered film.",
     "expected": {
       "subjects": [
-        "train"
+        "robot"
       ],
       "actions": [
-        "jumps"
+        "approaches"
       ],
-      "location": "mountains",
+      "location": "forest",
       "weather": "night",
       "style": "rendered",
       "min_scene_count": 5
@@ -2785,23 +2785,7 @@
   },
   {
     "id": 175,
-    "sentence": "A ship approaches through the moon at sunset.",
-    "expected": {
-      "subjects": [
-        "ship"
-      ],
-      "actions": [
-        "approaches"
-      ],
-      "location": "moon",
-      "weather": "sunset",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 176,
-    "sentence": "A bird launches through the space at storm.",
+    "sentence": "A bird launches through the village at sunset.",
     "expected": {
       "subjects": [
         "bird"
@@ -2809,7 +2793,23 @@
       "actions": [
         "launches"
       ],
-      "location": "space",
+      "location": "village",
+      "weather": "sunset",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 176,
+    "sentence": "A ship runs through the palace during a storm, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "ship"
+      ],
+      "actions": [
+        "runs"
+      ],
+      "location": "palace",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5
@@ -2817,15 +2817,15 @@
   },
   {
     "id": 177,
-    "sentence": "A dancer runs through the forest at rain.",
+    "sentence": "A train flies through space in the rain, as a rendered film.",
     "expected": {
       "subjects": [
-        "dancer"
+        "train"
       ],
       "actions": [
-        "runs"
+        "flies"
       ],
-      "location": "forest",
+      "location": "space",
       "weather": "rain",
       "style": "rendered",
       "min_scene_count": 5
@@ -2833,15 +2833,15 @@
   },
   {
     "id": 178,
-    "sentence": "A robot flies through the desert at snowy.",
+    "sentence": "A dancer crosses through the harbour on a snowy evening.",
     "expected": {
       "subjects": [
-        "robot"
+        "dancer"
       ],
       "actions": [
-        "flies"
+        "crosses"
       ],
-      "location": "desert",
+      "location": "harbour",
       "weather": "snowy",
       "style": "pixel",
       "min_scene_count": 5
@@ -2849,15 +2849,15 @@
   },
   {
     "id": 179,
-    "sentence": "A traveller crosses through the harbour at clear.",
+    "sentence": "A pilot jumps through the ocean under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
-        "traveller"
+        "pilot"
       ],
       "actions": [
-        "crosses"
+        "jumps"
       ],
-      "location": "harbour",
+      "location": "ocean",
       "weather": "clear",
       "style": "vector",
       "min_scene_count": 5
@@ -2865,15 +2865,15 @@
   },
   {
     "id": 180,
-    "sentence": "A pilot escapes through the village at night.",
+    "sentence": "A traveller dances through the moon at night, as a rendered film.",
     "expected": {
       "subjects": [
-        "pilot"
+        "traveller"
       ],
       "actions": [
-        "escapes"
+        "dances"
       ],
-      "location": "village",
+      "location": "moon",
       "weather": "night",
       "style": "rendered",
       "min_scene_count": 5
@@ -2881,15 +2881,15 @@
   },
   {
     "id": 181,
-    "sentence": "A cat dances through the city at sunset.",
+    "sentence": "A cat approaches through the harbour at sunset.",
     "expected": {
       "subjects": [
         "cat"
       ],
       "actions": [
-        "dances"
+        "approaches"
       ],
-      "location": "city",
+      "location": "harbour",
       "weather": "sunset",
       "style": "pixel",
       "min_scene_count": 5
@@ -2897,13 +2897,13 @@
   },
   {
     "id": 182,
-    "sentence": "A tiger jumps through the ocean at storm.",
+    "sentence": "A tiger launches through the ocean during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
         "tiger"
       ],
       "actions": [
-        "jumps"
+        "launches"
       ],
       "location": "ocean",
       "weather": "storm",
@@ -2913,15 +2913,15 @@
   },
   {
     "id": 183,
-    "sentence": "A astronaut approaches through the palace at rain.",
+    "sentence": "An astronaut runs through the moon in the rain, as a rendered film.",
     "expected": {
       "subjects": [
         "astronaut"
       ],
       "actions": [
-        "approaches"
+        "runs"
       ],
-      "location": "palace",
+      "location": "moon",
       "weather": "rain",
       "style": "rendered",
       "min_scene_count": 5
@@ -2929,15 +2929,15 @@
   },
   {
     "id": 184,
-    "sentence": "A train launches through the mountains at snowy.",
+    "sentence": "A robot flies through the desert on a snowy evening.",
     "expected": {
       "subjects": [
-        "train"
+        "robot"
       ],
       "actions": [
-        "launches"
+        "flies"
       ],
-      "location": "mountains",
+      "location": "desert",
       "weather": "snowy",
       "style": "pixel",
       "min_scene_count": 5
@@ -2945,15 +2945,15 @@
   },
   {
     "id": 185,
-    "sentence": "A ship runs through the moon at clear.",
+    "sentence": "A bird crosses through the city under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
-        "ship"
+        "bird"
       ],
       "actions": [
-        "runs"
+        "crosses"
       ],
-      "location": "moon",
+      "location": "city",
       "weather": "clear",
       "style": "vector",
       "min_scene_count": 5
@@ -2961,15 +2961,15 @@
   },
   {
     "id": 186,
-    "sentence": "A bird flies through the space at night.",
+    "sentence": "A ship jumps through the mountains at night, as a rendered film.",
     "expected": {
       "subjects": [
-        "bird"
+        "ship"
       ],
       "actions": [
-        "flies"
+        "jumps"
       ],
-      "location": "space",
+      "location": "mountains",
       "weather": "night",
       "style": "rendered",
       "min_scene_count": 5
@@ -2977,13 +2977,13 @@
   },
   {
     "id": 187,
-    "sentence": "A dancer crosses through the forest at sunset.",
+    "sentence": "A train dances through the forest at sunset.",
     "expected": {
       "subjects": [
-        "dancer"
+        "train"
       ],
       "actions": [
-        "crosses"
+        "dances"
       ],
       "location": "forest",
       "weather": "sunset",
@@ -2993,15 +2993,15 @@
   },
   {
     "id": 188,
-    "sentence": "A robot escapes through the desert at storm.",
+    "sentence": "A dancer escapes through the village during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
-        "robot"
+        "dancer"
       ],
       "actions": [
         "escapes"
       ],
-      "location": "desert",
+      "location": "village",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5
@@ -3009,15 +3009,15 @@
   },
   {
     "id": 189,
-    "sentence": "A traveller dances through the harbour at rain.",
+    "sentence": "A pilot approaches through the palace in the rain, as a rendered film.",
     "expected": {
       "subjects": [
-        "traveller"
+        "pilot"
       ],
       "actions": [
-        "dances"
+        "approaches"
       ],
-      "location": "harbour",
+      "location": "palace",
       "weather": "rain",
       "style": "rendered",
       "min_scene_count": 5
@@ -3025,109 +3025,13 @@
   },
   {
     "id": 190,
-    "sentence": "A pilot jumps through the village at snowy.",
+    "sentence": "A traveller launches through space on a snowy evening.",
     "expected": {
       "subjects": [
-        "pilot"
-      ],
-      "actions": [
-        "jumps"
-      ],
-      "location": "village",
-      "weather": "snowy",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 191,
-    "sentence": "A cat approaches through the city at clear.",
-    "expected": {
-      "subjects": [
-        "cat"
-      ],
-      "actions": [
-        "approaches"
-      ],
-      "location": "city",
-      "weather": "clear",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 192,
-    "sentence": "A tiger launches through the ocean at night.",
-    "expected": {
-      "subjects": [
-        "tiger"
+        "traveller"
       ],
       "actions": [
         "launches"
-      ],
-      "location": "ocean",
-      "weather": "night",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 193,
-    "sentence": "A astronaut runs through the palace at sunset.",
-    "expected": {
-      "subjects": [
-        "astronaut"
-      ],
-      "actions": [
-        "runs"
-      ],
-      "location": "palace",
-      "weather": "sunset",
-      "style": "pixel",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 194,
-    "sentence": "A train flies through the mountains at storm.",
-    "expected": {
-      "subjects": [
-        "train"
-      ],
-      "actions": [
-        "flies"
-      ],
-      "location": "mountains",
-      "weather": "storm",
-      "style": "vector",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 195,
-    "sentence": "A ship crosses through the moon at rain.",
-    "expected": {
-      "subjects": [
-        "ship"
-      ],
-      "actions": [
-        "crosses"
-      ],
-      "location": "moon",
-      "weather": "rain",
-      "style": "rendered",
-      "min_scene_count": 5
-    }
-  },
-  {
-    "id": 196,
-    "sentence": "A bird escapes through the space at snowy.",
-    "expected": {
-      "subjects": [
-        "bird"
-      ],
-      "actions": [
-        "escapes"
       ],
       "location": "space",
       "weather": "snowy",
@@ -3136,16 +3040,112 @@
     }
   },
   {
-    "id": 197,
-    "sentence": "A dancer dances through the forest at clear.",
+    "id": 191,
+    "sentence": "A cat flies through the village under a clear sky, drawn as vector art.",
     "expected": {
       "subjects": [
-        "dancer"
+        "cat"
+      ],
+      "actions": [
+        "flies"
+      ],
+      "location": "village",
+      "weather": "clear",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 192,
+    "sentence": "A tiger crosses through the palace at night, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "tiger"
+      ],
+      "actions": [
+        "crosses"
+      ],
+      "location": "palace",
+      "weather": "night",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 193,
+    "sentence": "An astronaut jumps through space at sunset.",
+    "expected": {
+      "subjects": [
+        "astronaut"
+      ],
+      "actions": [
+        "jumps"
+      ],
+      "location": "space",
+      "weather": "sunset",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 194,
+    "sentence": "A robot dances through the harbour during a storm, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "robot"
       ],
       "actions": [
         "dances"
       ],
-      "location": "forest",
+      "location": "harbour",
+      "weather": "storm",
+      "style": "vector",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 195,
+    "sentence": "A bird escapes through the ocean in the rain, as a rendered film.",
+    "expected": {
+      "subjects": [
+        "bird"
+      ],
+      "actions": [
+        "escapes"
+      ],
+      "location": "ocean",
+      "weather": "rain",
+      "style": "rendered",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 196,
+    "sentence": "A ship approaches through the moon on a snowy evening.",
+    "expected": {
+      "subjects": [
+        "ship"
+      ],
+      "actions": [
+        "approaches"
+      ],
+      "location": "moon",
+      "weather": "snowy",
+      "style": "pixel",
+      "min_scene_count": 5
+    }
+  },
+  {
+    "id": 197,
+    "sentence": "A train launches through the desert under a clear sky, drawn as vector art.",
+    "expected": {
+      "subjects": [
+        "train"
+      ],
+      "actions": [
+        "launches"
+      ],
+      "location": "desert",
       "weather": "clear",
       "style": "vector",
       "min_scene_count": 5
@@ -3153,15 +3153,15 @@
   },
   {
     "id": 198,
-    "sentence": "A robot jumps through the desert at night.",
+    "sentence": "A dancer runs through the city at night, as a rendered film.",
     "expected": {
       "subjects": [
-        "robot"
+        "dancer"
       ],
       "actions": [
-        "jumps"
+        "runs"
       ],
-      "location": "desert",
+      "location": "city",
       "weather": "night",
       "style": "rendered",
       "min_scene_count": 5
@@ -3169,15 +3169,15 @@
   },
   {
     "id": 199,
-    "sentence": "A traveller approaches through the harbour at sunset.",
+    "sentence": "A pilot flies through the mountains at sunset.",
     "expected": {
       "subjects": [
-        "traveller"
+        "pilot"
       ],
       "actions": [
-        "approaches"
+        "flies"
       ],
-      "location": "harbour",
+      "location": "mountains",
       "weather": "sunset",
       "style": "pixel",
       "min_scene_count": 5
@@ -3185,15 +3185,15 @@
   },
   {
     "id": 200,
-    "sentence": "A pilot launches through the village at storm.",
+    "sentence": "A traveller crosses through the forest during a storm, drawn as vector art.",
     "expected": {
       "subjects": [
-        "pilot"
+        "traveller"
       ],
       "actions": [
-        "launches"
+        "crosses"
       ],
-      "location": "village",
+      "location": "forest",
       "weather": "storm",
       "style": "vector",
       "min_scene_count": 5

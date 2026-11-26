@@ -162,3 +162,13 @@ swipl -q -s src/server.pl -g "listing(server:api_generate/1), listing(server:api
 **What this does:**
 - prints predicate definitions directly from loaded modules
 - helps confirm runtime behavior quickly
+
+## Example sentences and subjects
+
+The 200 example pairs in `tests/io_pairs.json` (and `tests/io_pairs.pl`) are
+grammatical sentences such as "A tiger flies through the mountains during a
+storm, drawn as vector art.", and the test checks all six expected
+properties: subject, action, place, weather, style and the least number of
+scenes. The subject is now the head noun before the action ("A red train
+races" gives `train`), with "and" joining two subjects, so words such as
+"drawn as vector art" are not taken as subjects.
