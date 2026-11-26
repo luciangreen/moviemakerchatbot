@@ -8,9 +8,28 @@
       infer_time/2
     ]).
 
+% The subjects are the head nouns of the phrase before the first action:
+% "A red train races" gives [train], "A cat and a dog run" gives [cat, dog].
+% Words after the action (places, weather, "drawn as vector art") are not
+% subjects. Without an action, every remaining content word is used.
 infer_subjects(Tokens, Subjects) :-
-    include(is_subject_token, Tokens, Raw),
+    (   append(Before, [Action|_], Tokens),
+        is_action_token(Action),
+        !,
+        split_on_and(Before, Groups),
+        findall(Head, ( member(Group, Groups),
+                        include(is_subject_token, Group, Words),
+                        last(Words, Head) ), Raw)
+    ;   include(is_subject_token, Tokens, Raw)
+    ),
     ( Raw = [] -> Subjects = [figure] ; list_to_set(Raw, Subjects) ).
+
+split_on_and(Tokens, Groups) :-
+    (   append(Group, ["and"|Rest], Tokens)
+    ->  split_on_and(Rest, RestGroups),
+        Groups = [Group|RestGroups]
+    ;   Groups = [Tokens]
+    ).
 
 infer_actions(Tokens, Actions) :-
     include(is_action_token, Tokens, Raw),
@@ -43,7 +62,7 @@ is_subject_token(Token) :-
     \+ time_token(Token, _),
     \+ member(Token, ["a","an","the","through","at","in","on","under","over","into","across","around","during","with","and","or","but","from","to","of","by"]).
 
-is_action_token(Token) :- member(Token, ["runs","run","flies","fly","crosses","cross","escapes","escape","launches","launch","dances","dance","approaches","approach","jumps","jump"]).
+is_action_token(Token) :- member(Token, ["runs","run","flies","fly","crosses","cross","escapes","escape","launches","launch","dances","dance","approaches","approach","jumps","jump","races","race","drives","drive","walks","walk","swims","swim","sails","sail","rides","ride","climbs","climb","glides","glide","rolls","roll","falls","fall","rises","rise","chases","chase","floats","float","wanders","wander"]).
 location_token("city", city).
 location_token("ocean", ocean).
 location_token("palace", palace).

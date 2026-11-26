@@ -109,11 +109,18 @@ test(io_pair_concept_coverage) :-
           atom_string(Action, ActionString),
           member(location(Location), Requirements),
           member(weather(Weather), Requirements),
+          member(style(Style), Requirements),
+          member(min_scene_count(MinScenes), Requirements),
           expand_spec(Sentence, Spec),
           Spec.subjects == [SubjectString],
           Spec.actions == [ActionString],
           Spec.location == Location,
-          Spec.weather == Weather
+          Spec.weather == Weather,
+          Spec.style == Style,
+          movie(Sentence, [style(Style)], movie(Fields)),
+          member(scenes(Scenes), Fields),
+          length(Scenes, SceneCount),
+          SceneCount >= MinScenes
         )
     ).
 
@@ -123,6 +130,25 @@ test(export_modes) :-
     movie_rendered("A red train races through snowy mountains.", HTML3),
     HTML1 \= HTML2,
     HTML2 \= HTML3.
+
+test(subject_is_head_noun) :-
+    expand_spec("A red train races through snowy mountains.", Spec),
+    get_dict(subjects, Spec, Subjects),
+    get_dict(actions, Spec, Actions),
+    assertion(Subjects == ["train"]),
+    assertion(Actions == ["races"]).
+
+test(two_subjects_joined_by_and) :-
+    expand_spec("A cat and a dog run through the city.", Spec),
+    get_dict(subjects, Spec, Subjects),
+    assertion(Subjects == ["cat", "dog"]).
+
+test(style_words_are_not_subjects) :-
+    expand_spec("A tiger flies through the mountains during a storm, drawn as vector art.", Spec),
+    get_dict(subjects, Spec, Subjects),
+    get_dict(style, Spec, Style),
+    assertion(Subjects == ["tiger"]),
+    assertion(Style == vector).
 
 test(io_pairs_count) :-
     findall(Id, io_pair(Id, _, _), Ids),
